@@ -1,0 +1,579 @@
+﻿<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W3C Highlights - March 2016</title>
+    <link rel="stylesheet" href="https://www.w3.org/StyleSheets/TR/base.css">
+    <link rel="stylesheet" href="https://www.w3.org/w3c-highlights/default.css">
+    <link rel="stylesheet" href="https://www.w3.org/w3c-highlights/styles.css">
+    <style>
+      img {
+      float: right;
+      max-width: 227px;
+      }
+      h2 {
+      padding: 0.2em 0.5em; 
+      white-space: nowrap; 
+      background: #005A9C;
+      color: white; 
+      display: inline; 
+      line-height: 2.8; 
+      border-radius: 3px; 
+      text-decoration: none
+      }
+      .quote {
+      margin-left: 19%;
+      margin-top: 0;
+      margin-bottom: 2em;
+      }
+      blockquote {
+      margin: 20px 0 20px 120px;
+      padding: 10px 0 10px 10px;
+      border: 0;
+      font-size: 100%;
+      font: inherit;
+      vertical-align: baseline;
+      }
+      blockquote::before {
+      position: absolute;
+      margin: -16px 0 0 -80px;
+      color: #CCC;
+      font: 200px/1 'PT Sans',sans-serif;
+      content: '\201C';
+      }
+      .QuoteAttr {
+      font-style: italic;
+      }
+      table, td, th { 
+      border: 2px solid #005A9C;
+      padding: 6px;
+      margin: 15px 0px 30px 0px;
+      width: 100%;
+      border-collapse: collapse;
+      border-spacing: 0;
+      text-align: left;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <p><a href="http://www.w3.org/"><img alt="W3C" src="https://www.w3.org/Icons/w3c_home" width="72" height="48"></a></p>
+      <h1>W3C重点工作报告（W3C Highlights） <br> 2016年3月</h1>
+      
+      <div class="section">
+	<div class="status">	  
+	  <p>这份 <strong>公开</strong> 的报告是为 <a href="https://www.w3.org/Member/Meeting/2016ac/March/">2016 W3C顾问委员会会议（Advisory Committee Meeting 2016）</a>准备的。更多关于 W3C运行的信息，可参考同时发布的 <a href="https://www.w3.org/2016/03/factsheet.html">W3C Fact Sheet &mdash; March 2016</a>（仅对会员开放）。查看其它历史版本的 W3C工作报告（W3C Highlights），请参阅 <a href="https://www.w3.org/w3c-highlights/">W3C重点工作（2015年10月）</a>（中文），以及 <a href="/Consortium/highlights/"> 查看报告的最新版本</a>。</p>
+	</div>
+	
+	<div id="toc">
+	  <p><a title="Show/Hide Table of Contents" href="#toc_list" onclick="toggleNav(); return false;">&#9776; Contents</a></p>
+	  <ul class="contents" id="toc_list">
+	    <li><a href="#intro">概述</a></li>
+	    <li><a href="#security">安全与隐私</a>
+	      <ul>
+		<li><a href="#crypto-authn">Web加密与认证（WebCrypto &amp; Web Authentication）</a></li>
+		<li><a href="#hasec">硬件安全</a></li>
+		<li><a href="#webappsec">Web应用安全</a></li>
+	      </ul>
+	    </li>
+	    <li><a href="#champions">基于开放Web平台的产业领域</a>
+	      <ul>
+		<li><a href="#automotive">汽车</a></li>
+		<li><a href="#digital-marketing">数字营销（Digital Marketing）</a></li>
+		<li><a href="#digital-publishing">数字出版（Digital Publishing）</a></li>
+		<li><a href="#entertainment">娱乐（Entertainment）</a>
+		  <ul>
+		    <li><a href="#html-media">HTML 媒体（HTML Media）</a></li>
+		    <li><a href="#second-screen">第二屏工作组（Second Screen Working Group）</a></li>
+		    <li><a href="#cloud-browser">云浏览器任务组（Cloud Browser Task Force）</a></li>
+		    <li><a href="#ggie">屏幕到屏幕互联网生态系统 (GGIE，Glass-to-Glass Internet Ecosystem)任务组</a></li>
+		    <li><a href="#tvcontrol-api">电视控制API社区组（TV Control API Community Group）</a></li>
+		    <li><a href="#multi-device-timing">多设备计时社区组（Multi-device Timing Community Group）</a></li>
+		  </ul>
+		</li>
+		<li><a href="#telecommunications">电信</a></li>
+		<li><a href="#wot">物联万维网（Web of Things）</a></li>
+		<li><a href="#webpayments">Web支付</a></li>
+	      </ul>
+	    </li>
+	    <li><a href="#application-development">应用开发</a>
+	      <ul>
+		<li><A href="#html">HTML</a></li>
+		<li><a href="#css">CSS</a></li>
+		<li><a href="#timed-text">时序文本（Timed Text）</a></li>
+	      </ul>
+	    </li>
+	    <li><a href="#web-for-all">面向所有人的Web（Web for All）</a>
+	      <ul>
+		<li><a href="#i18n">国际化 (i18n)</a></li>
+		<li><a href="#accessibility">Web无障碍（Web accessibility）</a></li>
+	      </ul>
+	    </li>
+	    <li><a href="#world">全球化的W3C（W3C in the World）</a>
+	      <ul>
+		<li><a href="#training">在线培训</a></li>
+		<li><a href="#liaisons">与其他标准组织的联络</a></li>
+	      </ul>
+	    </li>
+	    <li><a href="#org">W3C的治理结构优化（Organizational evolution）</a>
+	      <ul>
+		<li><a href="#headlights">2016年工作重点</a></li>
+		<li><a href="#ab">顾问委员会常务会议（Advisory Board，AB）</a>
+		  <ul>
+		    <li><a href="#ab-elections">AB选举</a></li>
+		    <li><a href="#ab-tf">2016年的AB工作优先级</a></li>
+		  </ul>
+		</li>
+		<li><a href="#tag">技术架构组（Tachnical Architecture Group，TAG）</a>
+		  <ul>
+		    <li><a href="#tag-elections">TAG选举</a></li>
+		    <li><a href="#tag-documents">TAG工作进展</a></li>
+		  </ul>
+		</li>
+	      </ul>
+	    <li><a href="#nbt">什么是下一个增长点?</a>
+	      <ol>
+		<li><a href="#nbt-html">Web的可扩展性与Web应用（Web extensibility &amp; (real) Web Applications）</a></li>
+		<li><a href="#nbt-security">安全</a></li>
+		<li><a href="#nbt-webrtc">Web实时通信（WebRTC）</a></li>
+		<li><a href="#nbt-webpayments">Web支付</a></li>
+		<li><a href="#nbt-industry">产业界支持</a></li>
+		<li><a href="#nbt-wot">物联万维网（Web of Things）</a></li>
+		<li><a href="#nbt-vr">虚拟现实（Virtual Reality）</a></li>
+	      </ol>
+	    </li>
+	    <li><a href="#conclusion">结论</a></li>
+	  </ul>
+	</div>
+	
+	<h2 id="intro">Introduction</h2>
+	<p>W3C将在扩展开放Web平台的同时，继续增强其安全性以及对Web用户隐私的保护。当谈及安全的问题是，每一个人都很关心。我们将把Web安全提到前所未有的高度，确保关于Web安全具体的需求被满足，并且与工业界、学术界、广大公众以及其他标准化组织一起。W3C's vision includes continuing to extend the capabilities of the Open Web Platform while defending it from security and privacy threats. Every one is concerned when it comes to security. We are raising the Open Web Platform to a higher standard of security. We ensure that specific Web security needs are met, and are doing so in collaboration with industry, academic experts, the public, and other standards organizations.</p>
+	<blockquote>
+	  <p>"When strong authentication is easy to deploy, we make the Web safer for daily use, personal and commercial. With the scope and frequency of attacks increasing, it is imperative for W3C to develop new standards and best practices for increased security on the Web."</p>
+	  <address class="QuotAttr">Sir Tim Berners-Lee, Web Inventor and W3C Director.</address>
+	</blockquote>
+	<p>Strengthening and securing the core is a requirement. Another is to be on the lookout for emerging areas, exploring what new application areas in general might mean for the underlying Open Web Platform, looking at where the Web is going to be able to identify where interoperability is needed in the new Web. W3C continues to think about the future of the Web. See below a few candidates which bear the potential of growing the capability of the core Open Web Platform.</p>
+	<p>In parallel, we have broadened our focus on vertical industries. Application Foundations of the Open Web Platform are fluid in nature given their multiple interconnections &mdash;such as Security implications of device interactions, or Accessibility considerations of streaming media&mdash; but the future of the Web is informed by the future of Industry. Most are building their business on the Web and participate in our work to address Web-specific requirements they have. Those requirements fit into more than one Vertical aspect and accross several of our key horizontal activities. Our Industry Vertical Champion Program shapes the future of the Web in the Industry.</p>
+	<p>The Web is a set of technologies for developing distributed applications with the greatest interoperability in history. According to a <a href="http://www.visionmobile.com/product/developer-economics-state-of-the-developer-nation-q3-2015/">survey last July</a>, 47% of developers are using HTML5, CSS, and JavaScript when building applications &mdash;up 5% in a year. The promise of the Open Web Platform is to lower the cost of developing powerful applications to reach the most people, on any device. We continue to attempt to capture this focus on developers through our <a href="/appfoundations/">Application Foundations</a> framework.</p>
+	
+	<h2 id="security">Security</h2>
+	<p>Security continues to emerge as topic number 1 for the Web platform and W3C. We have a very broad and diverse platform, are constantly adding functions &mdash;social, video, mobile&mdash; all have had impact, modified the platform to cater for industry needs. W3C continues to advance our efforts to address security issues, in order of priority: Web user security, Web application security, and Web Platform security.</p>
+	<p>We have taken a number of steps since TPAC 2015 to improve the security and privacy of the Web Platform and two upcoming Web security milestones are WebCrypto &amp; Killing Passwords.</p>
+	<ul>
+	  <li>Progress in Web Application Security enable Web Application developers to secure their apps, cooperate with the browser environment on enforcement of security policies, and make it easier for large deployed sites to upgrade their security to HTTPS.
+	  </li>
+	  <li>Killing Passwords: <a href="/2016/02/securewebauthwg.html.en">Launched</a> in February, the <a href="/Webauthn/">Web Authentication Working group</a> will specify a Web API for strong authentication on the Web; a real opportunity to move beyond passwords to a more usable and more secure authentication experience on the Web.
+	  </li>
+	</ul>
+	
+	<h3 id="crypto-authn">WebCrypto &amp; Killing Passwords</h3>
+	<p>The <a href="/TR/WebCryptoAPI/">Web Cryptography API</a>, anticipated to progress to Proposed Recommendatio, is about performing basic cryptographic operations in web applications. These are core components for libraries to build upon, avoiding the need for developers to "roll their own" solutions.</p>
+	<p>The <a href="/2015/12/web-authentication-charter.html">Web Authentication Working Group charter</a> illustrates another field where the standardization pushed by W3C serves the telecommunications industry: the adoption of the FIDO-based authentication methods in browsers promises to simplify identity management, an important need that operators can both help fulfill and benefit from. Chartered to specify a Web API for strong authentication on the Web, this work gives us the real opportunity to move beyond passwords, to a more usable and more secure authentication experience on the Web.</p>
+	
+	<h3 id="hasec">New work on Hardware-Based Security</h3>
+	<p>With the prospects of bringing the high security ensured by hardware-tokens to the Web platform, we are continuing development of a Hardware Security Working Group draft charter.</p>
+	
+	<p>There are a number of use cases that this standard will enable, including but not limited to the ability to manage credential information for hardware-based security modules, and the ability to access specific security sensitive services offered by hardware tokens such as Payments transaction authorization andd Identity verification. </p>
+	
+	<h3 id="webappsec">Web Application Security</h3>
+	<p>Content Security Policy Level 2, Mixed Content, Subresource Integrity, and Upgrade Insecure Requests are all Candidate Recommendations. These specs enable Web Application developers to secure their apps, cooperate with the browser environment on enforcement of security policies, and make it easier for large deployed sites to upgrade their security to HTTPS. Another significant deliverable from WebAppSec is the advancement to <a href="/TR/2016/WD-CSP3-20160126/">FPWD of Content Security Policy Level 3</a> late January.</p>
+	<p>Drawing upon these specifications, <a href="/blog/news/archives/5263">W3C upgraded its own website to HTTPS</a>, offering encrypted, integrity-protected access to W3C resources and Recommendations.</p>
+	
+	<h3>Security and Privacy Reviews</h3>
+	<p>We are systematically asking for Security and Privacy Considerations in charters and specification development. The TAG published a draft <a href="/TR/2015/NOTE-security-privacy-questionnaire-20151210/">Security and Privacy Self-Review Questionnaire</a>, with input from the Privacy Interest Group (PING) and Web Application Security Working Group, to help editors in making those assessments.</p>
+	<p>PING and Web Security Interest Group offer assistance with specification review, and the Director will look for Security and Privacy Considerations at specification transitions.</p>
+	
+	<h3 id="privacy">Privacy</h3>
+	<p>The Tracking Protection Working Group sent the <a href="/TR/2015/CR-tracking-dnt-20150820/">Tracking Preference Expression (TPE)</a> to Candidate Recommendation and the Compliance Specification is almost there. These specs give a mechanism for expressing tracking preferences, and by which sites can indicate their compliance with user requests.</p>
+	<p>PING published a draft of <a href="/TR/fingerprinting-guidance/">Fingerprinting Guidance for Web Specification Authors</a>.</p>
+	
+	
+	<h2 id="champions">Reinforcing visions: the future of the Web and the future of Industry</h2>
+	<p>As the impact of the Open Web Platform has grown, several industries are building their business platforms on top of the Web and using Web technology.</p>
+	<p>Last October <a href="https://www.w3.org/2015/10/w3c-highlights/#verticals">we presented</a> why the Industry is important to the Web and vice-versa, and introduced the Industry Vertical Champion Program,</p>
+	<ul>
+	  <li>to understand at a deep level the Web technology needs of the industry,</li>
+	  <li>to understand what is important today and what will be important in the future,</li>
+	  <li>to map the industry needs into specific Web technology needs, and</li>
+	  <li>to address real, near-term business problems within the context of the core values of the Web ...</li>
+	  <li>... in a global and inclusive way.</li>
+	</ul>
+
+<!--
+	<p>Our key horizontal activities intersect with our current vertical industries.</p>
+	<table id="horizontal-vertical">
+	  <thead>
+	    <tr><th scope="col"></th><th scope="col">Automotive</th><th scope="col">Digital&nbsp;Marketing</th><th scope="col">Digital&nbsp;Publishing</th><th scope="col">Entertainment</th><th scope="col">Telecommunications</th><th scope="col">Security</th><th scope="col">Web&nbsp;of&nbsp;Things</th><th scope="col">Web&nbsp;Payments</th></tr>
+	  </thead>
+	  <tbody>
+	    <tr><th>Automotive</th><td>&#x2714;</td><td>&#x2714;</td><td>&#x2714;</td><td>&#x2714;</td><td>&#x2714;</td><td>&#x2714;</td><td>&#x2714;</td><td>&#x2714;</td></tr>
+	    <tr><th>Digital Marketing</th><td>&#x2714;</td><td>&#x2714;</td><td>&#x2714;</td><td>&#x2714;</td><td>&#x2714;</td><td>&#x2714;</td><td>&#x2714;</td><td>&#x2714;</td></tr>
+	    <tr><th>Digital Publishing</th><td>&#x2714;</td><td>&#x2714;</td><td>&#x2714;</td><td></td><td></td><td>&#x2714;</td><td></td><td></td></tr>
+	    <tr><th>Entertainment</th><td>&#x2714;</td><td>&#x2714;</td><td>&#x2714;</td><td>&#x2714;</td><td>&#x2714;</td><td>&#x2714;</td><td></td><td>&#x2714;</td></tr>
+	    <tr><th>Telecommunications</th><td>&#x2714;</td><td>&#x2714;</td><td></td><td>&#x2714;</td><td>&#x2714;</td><td>&#x2714;</td><td>&#x2714;</td><td>&#x2714;</td></tr>
+	    <tr><th>Security</th><td>&#x2714;</td><td>&#x2714;</td><td>&#x2714;</td><td>&#x2714;</td><td>&#x2714;</td><td>&#x2714;</td><td>&#x2714;</td><td>&#x2714;</td></tr>
+	    <tr><th>Web of Things</th><td>&#x2714;</td><td></td><td></td><td></td><td>&#x2714;</td><td>&#x2714;</td><td>&#x2714;</td><td>&#x2714;</td></tr>
+	    <tr><th>Web Payments</th><td>&#x2714;</td><td>&#x2714;</td><td></td><td>&#x2714;</td><td>&#x2714;</td><td>&#x2714;</td><td></td><td>&#x2714;</td></tr>
+	  </tbody>
+	</table>
+-->	
+
+	<h3 id="automotive">Automotive</h3>
+	<p>Automotive's future is made of rich user experiences, greater security and smarter location-based services. Drivers and passengers demand the same rich user experiences in vehicles that they enjoy with all their mobile and other devices. HTML5 and the Open Web Platform offer the best roadmap for new services, increased security and interoperability.</p>
+	<p>W3C has been working with GENIVI to enhance our work with the automotive industry to the level of having a strong shared vision and partnership. The GENIVI Alliance is a non-profit automotive industry alliance committed to driving the broad adoption of an In-Vehicle Infotainment (IVI) open-source development platform.</p>
+	<p>The <a href="/2014/automotive/">Automotive Working Group</a> is <a href="/TR/#tr_Automotive">advancing on the Recommendation Track</a> the W3C Vehicle Information API, which aims to enable connectivity through in-vehicle infotainment systems and vehicle data access protocols and can be leveraged by web applications running on mobile devices that access the data resources of a connected passenger vehicle. A companion, the Vehical Data API, defines a standard for Vehicle Data which might be available in a vehicle.</p>
+	<p>The group is now engaging with different stakeholders and consumer groups in addressing data rights, and has established a Privacy and Security Task Force for Automotive.</p>
+	<p>The Automotive and Web Platform Business Group, formed back in 2013, is pursuing work on a Location-Based Services API, and has handed use cases for automotive Media Tuner needs to the TV Control API Community Group. A draft charter for a TV Control Working Group is in the work.
+	<p>The Open Web Platform helps reduce costs and complexity by replacing multiple proprietary approaches with a simplified global solution. Web applications built for vehicles using smartphones or embedded solutions are delivered as products or services. Areas where the Web can help auto:</p>
+	<ul>
+	  <li>Reducing driver distraction and improving safety</li>
+	  <li>Location-based services, shopping, and customer engagement</li>
+	  <li>Enhanced driving experiences and situational awareness</li>
+	  <li>Integrating home, work, and travel</li>
+	</ul>
+	
+	<h3 id="digital-marketing">Digital Marketing</h3>
+	<p>W3C continues to explore this emerging industry vertical. The September 2015 <a href="/2015/digital-marketing-workshop/index.html">Digital Marketing workshop</a> identified three streams of work:</p>
+	<ul>
+	  <li>Security, reflected in the RequestVisibility API work underway in the Web Application Security Working Group</li>
+	  <li>Advertising</li>
+	  <li>Incentives</li>
+	</ul>
+	<p>A draft Digital Advertising Interest Group seeks to provide a forum for technical discussions to identify Advertising use cases and requirements to achieve a simpler, more direct, dependable, and reliable model to deliver and measure ads on the web. An Incentives Interest Group would address web-based customer relations, improving the ability to customize loyalty programs and offers, responsive to users' privacy and purchasing interests.</p>
+	<p>W3C is considering an e-Commerce W3C Workshop later in 2016. Consumer purchasing behaviour is shifting to mobile and the revenue generated by advertising or functionality or entertainment in exchange for a purchase price, is dwarfed by the quantity of e-Commerce transactions being conducted through mobile applications.</p>
+	
+	<h3 id="digital-publishing">Digital Publishing</h3>
+	<p>To change the way books, magazines and journals are created and published, the <a href="/2015/09/digpubig">Digital Publishing Interest Group</a> is continuing work on Portable Web Publications, having issued several drafts of <a href="/TR/pwp/">Portable Web Publications for the Open Web Platform</a> &mdash;a vision for the future of digital publishing that achieves full convergence between online and offline documents&mdash; and has set up task forces on archiving and locators. The group collaborates with the ARIA Working Group for accessibility concerns, and the CSS Working Group on various issues related to the needs of the Digital Publishing Community.</p>
+	<p>Additional Public Working Drafts published recently include <a href="/TR/2014/WD-dpub-latinreq-20140930/">Requirements for Latin Text Layout and Pagination</a> and <a href="/TR/2015/WD-dpub-aria-1.0-20151119/">Digital Publishing WAI-ARIA Module 1.0</a>.</p>
+	
+	
+	<h3 id="entertainment">Entertainment</h3>
+	<h4 id="html-media">HTML Media</h4>
+	<p>The industry and the Consortium choice is to enhance HTML to be capable of playing video content without the help of plug-in video players, streaming technologies over HTTP such as Dynamic Adaptive Streaming over HTTP (DASH) has rapidly emerged in the industry. W3C took to develop two HTML5 extensions to enable <abbr title="User Agent">UA</abbr>s to play such streams. 
+	</p><p>These extensions are essential to meet the industry requirements for video content delivery on the Web, by providing Web apps with more flexible control over video content, which enable advanced services such as dynamic ad-insertion.
+	</p><p>HTML Media, core media features of Web platform, is developed in HTML (Media Extensions) Working Group, previously called the HTML Working Group, while new features of core Web standards are crafted in Web Platform Working Group.
+	</p>
+	<p>Ongoing work:</p>
+	<ul>
+	  <li> The HTML (Media Extensions) WG is currently working on two extensions: Media Source Extensions (MSE) and Encrypted Media Extensions (EME).</li>
+	  <li> MSE is a candidate recommendation that allows JavaScript to send byte streams to media codecs within Web browsers that support HTML5 video. (<a href="https://github.com/w3c/media-source">MSE on Github</a>)</li>
+	  <li> EME is a working draft for providing a communication channel between Web browsers and digital rights management (DRM) agent software. This allows the use of HTML5 video to play back DRM-wrapped content such as streaming video services without the need for third-party media plugins like Adobe Flash or Microsoft Silverlight. (<a href="https://github.com/w3c/encrypted-media/">EME on Github</a>)</li>
+	  <li> version 1.0 of the two extensions are planned to become W3C Recommendations sometime by the end of this year. </li>
+	  <li> There are some industry requests to include additional features such as continuous key rotation to meet original requirements of extensions. The group is in the process of deciding which feature should go to version 1.0. TPAC 2016 will be an important milestone for this work.</li>
+	  <li> To make them RECs in time, the group is putting more efforts on improving testing.</li>
+	</ul>
+	
+	<h4 id="second-screen">Second Screen Working Group</h4>
+	<p>Web content is available on an ever expanding array of devices including eBook readers, phones, tablets, laptops, auto displays, and electronic billboards, and there are a variety of mechanisms that allow these devices to use secondary display screens available in the local environment, attached by wired connections or remotely with wireless, peer-to-peer media. However, in most cases, lower layers such as OS provide those connection mechanisms, which Web apps, consequently, have no access and control over. Web apps should be capable of implementing services which cover scenarios such as using a big screen device to watch a movie selected on and streamed from a smartphone are getting more common as <abbr title="Over-the-top content">OTT</abbr> services like Netflix emerge.
+	</p><p>The <a href="/2014/secondscreen/">Second Screen Working Group</a> aims at defining simple APIs that allow web applications to show and control web content on one or more secondary displays. Some of the group's work is incubated in the <a href="/community/webscreens/">Second Screen Community Group</a>.
+	</p>
+	<p>Ongoing work:</p>
+	<ul>
+	  <li> Focus in 2015 was on the <a href="https://w3c.github.io/presentation-api/">Presentation API</a>. The interfaces defined in this specification have stabilized and the specification should move forward to Candidate Recommendation by mid-2016.</li>
+	  <li> In parallel to the Presentation API, the group is now also developing the <a href="https://w3c.github.io/remote-playback/">Remote Playback API</a> that allows controlling remote playback of media from a web page.</li>
+	</ul>
+	
+	<h4 id="cloud-browser">Cloud Browser Task Force</h4>
+	<p>The <a href="/2011/webtv/wiki/Main_Page/Cloud_Browser_TF">Cloud Browser Task Force</a>, a subset of the <a href="/2011/webtv/">Web and TV Interest Group</a>, discusses support for web browser technology within devices such as HDMI dongles and lightweight <abbr title="set-top box">STB</abbr>s.<br>
+	  New cloud browser Runtime Environments (RTEs) require the definition of APIs that would enable communication between the cloud browser and the client. The Task Force will look into use cases, requirements and gaps in cloud UI architectures. 
+	</p>
+	<p>Ongoing work:</p>
+	<ul>
+	  <li> To enable arbitrary Web apps to run on cloud browser RTEs, we need to modify some existing W3C APIs such as MSE and EME for video delivery services. This Task Force will figure out such gaps between cloud browser RTEs and existing Web standards.</li>
+	  <li> The Task Force deals with not only TV-like-service-centric use cases but also use cases from other industries such as gaming, signage, etc, if the TF gets interest or contribution from the stakeholders.</li>
+	  <li> This technology can achieve architectural flexibility about User Agents or Web browsers, which can provide users with better privacy and security; and cloud service providers with a different level of control over Web browsing features.</li>
+	</ul>
+	
+	<h4 id="ggie">GGIE (Glass-to-Glass Internet Ecosystem) Task Force</h4>
+	<p>Thanks to the international and interdependent standards developed by global organizations including W3C, IETF, IEEE, CEA, SMPTE, MPEG, etc. the Internet-based or Web-based video content delivery services are expanding in the entertainment content market. Because of the distributed and sometime ad-hoc nature of the efforts, there is a need to go back to use cases: capture existing use cases, analyze them, and enhance them to further develop new standards for better services.</p>
+	<p>The <a href="/2011/webtv/wiki/GGIE_TF">GGIF Task Force</a>, a subset of the Web and TV Interest Group, discusses the end to end Internet digital video ecosystem, focusing on all phases of the video life cycle: Capture-Edit-Package-Distribute-Find-Watch for both professional and non-professional digital video, and will identify recommended standards and features that could be developed.</p>
+	<p> Ongoing work:</p>
+	<ul>
+	  <li> The TF finished its first round at TPAC 2015 in Sapporo, with a report in which it emphasized that flexible content identification more than traditional in- and out-band content-id and metadata would be the key component for GGIE. It would use ID-less content identification such as fingerprint and watermark technologies in addition to conventional content-id systems.</li>
+	</ul>
+	
+	<h4 id="tvcontrol-api">TV Control API Community Group</h4>
+	<p>In 2014, The Web and TV IG launched the <a href="/community/tvapi/">TV Control API Community Group</a> to create a draft specification about APIs that make Web apps capable of accessing TV tuners and other broadcasting resources. TV sets are another major type of devices which use HTML5 as its run-time engine. Some regional SDOs have created HTML5-based run-time engines for their TV specs by expanding HTML5 in their space. This caused a fragmentation of Web apps on TV. TV-like user interfaces are still common on big screen devices, thus it is useful to provide generic APIs to easily create such UIs in an underlying-layer-agnostic way.
+	</p>
+	<p>Ongoing work:</p>
+	<ul>
+	  <li> The <a href="http://w3c.github.io/tvapi/spec/">TV Control API Specification</a>, developed as a way to address this fragmentation issue, was published as final Community Group report in November 2015. </li>
+	  <li> The Auto BG is providing the TV Control API CG use cases for automotive Media Tuner needs.</li>
+	</ul>
+	
+	<h4 id="multi-device-timing">Multi-device Timing Community Group</h4>
+	<p>In 2015, The Web and TV IG launched the <a href="/community/webtiming/">Multi-device Timing Community Group</a> to a create draft specification that defines a common, multi-device, timing mechanism and a practical programming model e.g. to allow Web apps to synchronize the playback of multiple streams on multiple devices. Timing mechanisms allow operations to be executed at the correct time. The Web already has several mechanisms, some of which may be custom, and the Web lacks support for multi-device timing. More generally, multi-device timing has wide utility in communication, collaboration and multi-screen presentation.</p>
+	<p>Multi-device timing is particularly important for the broadcasting industry, as it is the key enabler for web-based secondary device offerings. This mechanism would also improve accessibility of the Web media content. For example, third party can easily provide additional audio track, such as <a href="/TR/media-accessibility-reqs/#clean-audio">Clean Audio</a>.</p>
+	<p>Ongoing work:</p>
+	<ul>
+	  <li> The Multi-device Timing CG has developed an initial draft of the <a href="https://webtiming.github.io/timingobject/">Timing Object</a> specification, along with a reference polyfill implementation in JavaScript.</li>
+	  <li> Since TPAC 2015, the group has reached out to various members to gather feedback on the topic in general and on the proposed approach in particular, with a view to assessing practical next steps from a standardization perspective. Contributions to the discussions would be particularly welcome!</li>
+	</ul>
+	
+
+	<h3 id="telecommunications">Telecommunications</h3>
+	<p>Telecommunication remains the largest vertical represented in W3C Membership; the recent addition of Japan-based Softbank (which also owns Sprint in the US) strengthens further this representation. The W3C agenda continues to support important challenges and opportunities that emerge from the telco industry.</p>
+	
+	<h4>Upcoming work:</h4>
+	<ul>
+	  <li> The WebRTC work continues apace, with Candidate Recommendation planned for the two main APIs behind the technology (getUserMedia &amp; WebRTC) in the upcoming few weeks, following successful F2F meetings during the fall.</li>
+	  <li> Once WebRTC 1.0 reaches Candidate Recommendation, work will start in earnest on the next version of WebRTC, which aims at converging with the work started in the ORTC Community Group. </li>
+	</ul>
+	
+	<h4>Security tie-in:</h4>
+	<ul>
+	  <li> The charter of the <a href="/webauthn">Web Authentication Working Group</a> illustrates another field where the telecommunications industry is bound to benefit from the standardization pushed by W3C: the adoption of the FIDO-based authentication methods in browsers promises to simplify identity management, an important need that operators can both help fulfill and benefit from.</li>
+	  <li>A <a href="/2015/hasec/2015-hasec-charter.html">Hardware Security Working Group draft charter</a> (currently under Advisory Committee review) entertains the prospect of bringing the high security ensured by hardware-tokens (such as SIM cards) to the Web platform.</li>
+	</ul>
+	
+	<h4>Device perspective:</h4>
+	<ul>
+	  <li> The work on generic Sensor API pushed by the Device APIs Working Group (soon to be renamed Device &amp; Sensors Working Group) promises to make the Web a more malleable platform when it comes to interaction with physical sensors. </li>
+	  <li> Discussions on bringing the work of the Web Bluetooth Community Group and the Web NFC Community Group to standardization have also started, after their successful meetings at TPAC 2015.</li>
+	</ul>
+	
+	<h4>Overlapping work:</h4>
+	<ul>
+	  <li> See the <a href="#entertainment">Entertainment section</a>. Many operators also provide media services to their customers; the activity in the Web and TV interest group continues to provide new capabilities for Web-based services in this area, as illustrated by the ongoing work on the TV Control API, Web-based synchronization. Following their F2F meeting at TPAC, the Interest Group created a new task force to work on cloud-rendering, facilitating the deployment of Web-based media services in thin-clients (e.g. set top boxes).</li>
+	  <li> See the <a href="#webpayments">Web Payments section</a>. W3C work on Payments and Internet of Things completes the picture of the many places where the telecommunication industry can bring its expertise and its requirements to the future of the Web.</li>
+	</ul>
+	
+	<h3 id="wot">Web of Things</h3>
+	<p>The Internet of Things (IoT) could be the next driver on the Internet, provided we have a model which makes broad sharing available for it. IoT refers to services for connected sensors and actuators. <a href="http://www.juniperresearch.com/press/press-releases/iot-connected-devices-to-triple-to-38-bn-by-2020">Juniper Research expects</a> the number of IoT connected devices to rise to 38.5 billion in 2020 (from 13.4 billion in 2015). Gartner expects a huge business potential and predicts the aggregate benefits forecast to be $1.9 trillion across sectors in 2020.</p>
+	<p>Today’s architectures and initial implementations tend to be silo-ed. There are standards at the physical layer but insufficient interoperability at the higher layers. The Web of Things (WoT) defines a Web-based interoperability layer on top of existing IoT platforms, using a uniform approach to semantics and metadata, thus countering fragmentation and fostering the business potential currently held back due to incompatible platforms and a bewildering range of protocols.</p>
+	<p>For example, a person’s watch (as an IoT device) will want to participate in IoT wearable applications (since it is worn), IoT medical applications (as it takes one’s pulse and links into personal medical information), IoT Smart Homes (used to control the home), IoT Smart Cities (as the municipal infrastructure relies on data about weather and traffic), and IoT Smart Factories (to track its usage and condition). But to participate across all silos, and for applications to be built which leverage all silos requires common data models, metadata, and an interoperable layered model.</p>
+	<p>The Web of Thing model complements IoT by providing a higher level interoperability layer above IoT. W3C is unique in tackling the Internet of Things from the perspective of application developers, with an approach that frees you from the complexities of the protocols and communication patterns — these can be chosen to match the specific needs for each context.</p>
+
+	<h4>Ongoing work:</h4>
+	<ul>
+	  <li>The <a href="/WoT/IG/">Web of Things Interest Group</a> is defining standard vocabularies, APIs and protocol bindings, security, privacy and resilience, along with enablers for dynamic open markets of services including discovery, automated negotiation of prices, terms and conditions, provisioning, payments and support throughout the product lifecycle from design to obsolescence.</li>
+	</ul>
+	
+	<h3 id="webpayments">Web Payments</h3>
+	<p>E-commerce is growing as a proportion of all commerce. According to Forrester, the web in 2018 will account for 11% of total retail sales, up from 8% in 2013. However, a number of challenges are limiting the potential of E-commerce, such as fraud losses, user expectations in particular with mobile device usage, technology (Biometrics, Web of Things, Automotive advances, and NFC adoption), regulation.</p>
+	<p>The historic dichotomy between the design point of the Web and how it is used by merchants is striking. The Web is user-centric. It is designed to connect humanity to information. e-Commerce has historically been merchant-centric. A merchant makes their product available on their site for a customer to come in and buy.</p>
+	<p>But e-Commerce has changed. In today’s omni-channel model, the customer is in charge. They receive information from social media and recommendation websites. They combine in-store with on-line; and expect service from laptop and mobile. There are enormous changes and more flexibility in payment methods. Users are looking and finding the best deal and most importantly the best overall experience.</p>
+	<p>The underlying payment and e-commerce infrastructure will be “web-like”. In addition to connecting humanity to information, we will better connect humanity with their economic potential.</p>
+	<h4>Ongoing work:</h4>
+	<ul>
+	  <li>The <a href="/Payments/WG/">Web Payments Working Group</a> is looking at how to improve the e-Commerce user experience by streamlining the checkout process and improving security. Ian Jacobs has written a <a href="/blog/wpwg/2016/03/04/fpwd/">summary</a> of the Working Group’s recent discussion and plan to publish a First Public Working Draft in early April of what we believe will be transformative new Web technology.</li>
+	  <li>Ultimately, we will need a broad set of offerings. The <a href="/Payments/IG/">Web Payments Interest Group</a>, where 120 people now participate, discussed a number of topics as fodder for new standardization efforts. These included the impact of regulatory changes such as the Payment Services Directive (PSD2) in Europe, as well as faster-payments initiatives such as those of the US Federal Reserve. The group also discussed use cases for “verifiable claims” on the Web, opened a discussion on blockchain and the Web, and discussed interoperability with the broader financial services ecosystem (e.g., through alignment with ISO20022).</li>
+	</ul>
+
+	<h2 id="application-development">Application Development</h2>
+	<h3 id="html">HTML</h3>
+	<p>Progress are being made to ensuring that HTML is truly part of the extensible Web, to enable feature development and iteration through the use of HTML, CSS, and Javascript.</p>
+	<h4>Extensible Web &amp; (real) Web Applications</h4>
+	<p>The work on Web components (Custom Elements, Shadom DOM, HTML imports) is closer to completion and getting broader consensus around some of the Core issues. This brings us closer to a realilty when developers will be able to provide their own custom HTML elements, as components.</p>
+	<p>We are also ensuring that Web applications are able to be behave like real applications. The Core of this work happens around the Service Workers effort, to enable offline support, application lifecycles (such as install, update), and background tasks (offline notification). This allows the application to install properly and ensure from the start that the needed resources are available offline.</p>
+	<h4>HTML specs on Github</h4>
+	<p>The Web Platform Working Group also announced a <a href="https://lists.w3.org/Archives/Public/public-html/2016Jan/0008.html">new plan</a> in order to maintain the HTML specification. The specification was moved to GitHub and transformed to facilitate its edition, in order to promote the widest participation possible.</p>
+	<p>We encourage the community at large to contribute and help the maintenance of the specification. The focus is on making changes to promote interoperability to produce a new Recommendation. New features are encouraged to go through an incubation phase before being brought to the Working Group, in order to demonstrate buy-in from a sizeable community.</p>
+	<h4>Track for HTML 5.1 REC</h4>
+	<p>The group is on track to deliver a Recommendation for HTML 5.1 this year, with a working approach that will make it possible to deliver a further improved HTML Recommendation in another year or two. Read the Web Platform Working Group co-chairs's <a href="/blog/2016/03/html-whats-next/">invitation to get involved</a> and make sure the development of HTML continues to reflect the needs and goals of the broad community.</p>
+	
+	<h3 id="css">CSS</h3>
+	<p>The CSS Working Group is continuing its refinement and progress of the CSS language. The definition for the current state of CSS was updateed with the publication of the <a href="/TR/CSS/">CSS Snapshot 2015</a> document. Its primary audience is CSS implementers, not CSS authors, as this definition includes modules by specification stability, not Web browser adoption rate.</p>
+	
+	<h3 id="timed-text">Timed Text</h3>
+	<p>While continuing its work on the TTML Text and Image Profiles for Internet Media Subtitles and Captions, known as IMSC, the work of the Working Group received an <a href="/2016/01/emmyawardttml.html.en">Emmy ® Award for Standards Work on Accessible Video Captioning and Subtitles</a>. The award recognizes W3C’s Timed Text Markup Language (TTML) standard that helps ensure that the needs of people with disabilities, particularly people who are deaf or hard of hearing, are addressed. This work, begun in WAI, enables online captioning, which is critically important to ensure accessibility of TV and video on the web for people who are deaf and hard of hearing. In recent years with the convergence of traditional media and the Web, more video content from television is coming to the Web, and the Web is now running on televisions. TTML helps to bridge these worlds.	</p>
+	
+	<h2 id="web-for-all">Web for All</h2>
+	
+	<h3 id="i18n">Internationalization (i18n)</h3>
+	<p>Fewer than one third of current Web users speak English as their native language and that proportion will continue to decrease as the Web reaches more and more communities of limited English proficiency. If the Web is to live up to the "World Wide" portion of its name, it must support the needs of world-wide users at a basic level as they engage with content in the various languages. The W3C Internationalization activities pursue this goal in various ways, including coordination with other organizations, creation of educational materials, coordination on the work of other W3C groups, gathering user requirements, and technical work itself on various topics:</p>
+
+	<ul>
+	<li>Reviews, discussion and advice for W3C specification developers:<br>
+	Ongoing work for the i18n WG is review and comments related to specifications of a number of Working Groups. In particular, during this period, the i18n Working Group has been working with WGs such as WebVTT, CSV, and Web Annotation to explore best practices for handling bidi content in plain text environments.</li>
+	<li>Testing:<br>
+	Significant effort went into the creation of <a href="/International/tests/repo/results/encoding-dbl-byte">double-byte</a> and <a href="/International/tests/#encoding-spec">other tests</a> for the Encoding specification, which is currently in CR, with a full set of results for major browsers. This constitutes a significant step forward. Implementation of the spec is still ongoing.</li>
+	<li>Publications:<br>
+	The Working Group published further updates to the Working Draft of <a href="/TR/charmod-norm/">Character Model for the World Wide Web: String Matching and Searching</a>, previously called Character Model for the World Wide Web: Normalization.<br>
+	Aimed at W3C specification developers, the new Working Draft removes much material that was outdated and extends the content into other areas where string matching considerations apply, beyond those of normalization.</li>
+	</ul>
+
+	<h4>Better OWP support for the world's languages</h4>
+	<p>Work is moving forward slowly but steadily on specifying layout and typographic requirements (see <a href="/International/layout">Layout &amp; typography</a>). The major new initiative to standardize Mongolian variant forms in Unicode which is using Internationalization activity lists is now nearing completion. Many of the world's top Mongolian font experts are collaborating in this effort. Recommendations are being taken to the Unicode Technical Committee.</p>
+	
+	<ul>
+	  <li><a href="http://w3c.github.io/alreq/">Arabic Layout Requirements</a> work is progressing steaidly.</li>
+	  <li>There is also significant new activity on <a href="http://w3c.github.io/elreq/">Ethiopic Layout Requirements</a>.</li> 
+	  <li><a href="/TR/clreq/">Requirements for Chinese Text Layout</a>, has made some progress. The <a href="http://w3c.github.io/clreq/">github draft</a> now includes a Simplified Chinese translation, ie. showing 3 language versions of the page.</li>
+	  <li>A draft of <a href="http://w3c.github.io/tlreq/">Tibetan Layout Requirements</a> has been prepared as a base for work to engage expert participation.</li>
+	</ul>
+	
+	<p>We are also working with browser developers to facilitate the implement of isolation for the dir attribute, which will significantly improve support for bidirectional text on the Web (eg. for Arabic, Hebrew, Thaana, etc).</p>
+	
+	<h4>MultilingualWeb</h4>
+	<p>We continued again in liaison with OASIS the work on have the <a href="/TR/its20/">Internationalization Tag Set (ITS) 2.0 specification</a> available natively in XLIFF. This work will be documented in XLIFF 2.1, so that XLIFF tools conformant to the related XLIFF 2.1 module will understand ITS natively. This work should be completed in Q1-Q2 2016 and help the adoption of Web technologies in the localization realm a lot.</p>
+	<p>Work on linguistic linked data continues in various community groups. The BPMLOD CG published various <a href="/community/bpmlod/#group-reports">guidelines</a> for converting existing data into linguistic linked data resources. This conversion helps to foster cross-lingual access on the Web.</p>
+	
+	<h4>Outreach and education</h4>
+	<p>The group continues to maintain and add to its collection of articles for content developers, helping them understand and work with internationalisation-related features of the Web. See the list of <a href="/International/techniques/authoring-html-dynamic">techniques index for authoring HTML and CSS content</a>, which points to resources on a task-by-task basis. </p>
+	<p>Internationalization groups participants also deliver talks and seminars to raise awareness about Multilingual Web and encourage participation in the work at the W3C.  They spoke about their work at the Internationalization &amp; Unicode Conference in Santa Clara, last October. In February, they were part of a <a href="http://www.unicode-oman.org/">Unicode workshop in Oman</a>. It is expected that this will widen awareness of and support for work on typographic support in the Web Platform for non-Latin scripts.</p>
+	<p>Support for internationalization content and the user forum was also provided for the HTML5 Mooc course run by the W3C.</p>
+
+	<h3 id="accessibility">Web accessibility</h3>
+	<h4>New accessibility guidance for authoring tools and user agents</h4>
+	<p><a href="/TR/UAAG20/">User Agent Accessibility Guidelines</a> (UAAG) 2.0 is now a completed Working Group Note, and provides help for developers of browsers, browser extensions, mobile applications and eReaders interested in providing a more consistent level of support for the needs of people with disabilities and older users. <a href="/TR/2015/NOTE-UAAG20-Reference-20151215/">UAAG Reference: Explanations, Examples, and Resources</a> is an implementation guide for UAAG 2.0.</p>
+	<p><a href="/TR/ATAG20/">Authoring Tool Accessibility Guidelines</a> (ATAG) 2.0, which is a W3C Recommendation, helps authoring tool developers support more efficient production of accessible content and as well as interfaces that work better for web authors with disabilities and older users. Benefits which authoring tools that conform to ATAG 2.0 provide for developers of websites and web content are outlined in <a href="/WAI/intro/atag-glance">ATAG at a Glance</a>.</p>
+	
+	<h4> New work on web content accessibility underway</h4>
+	<p>The flagship <a href="/TR/WCAG20/">Web Content Accessibility Guidelines</a> (WCAG) 2.0 have been stable and widely used internationally since 2008. The WCAG Working Group is currently exploring several potential areas of new guidance, including in the areas of <a href="/WAI/GL/mobile-a11y-tf/">mobile accessibility</a>, <a href="/WAI/PF/cognitive-a11y-tf/">cognitive and learning accessibility</a>, and <a href="/WAI/GL/low-vision-a11y-tf/">low vision accessibility</a>.</p>
+	<p> Potential future work on combined guidelines across the areas of web content and applications, user agents, and authoring tools is also under exploration. </p>
+	
+	<h4>New work organization</h4>
+	<p>Work on <a href="/TR/WAI-ARIA/">Accessibility Rich Internet Applications</a> (ARIA) has moved to a dedicated group (the <a href="/WAI/ARIA/">ARIA WG</a>) and is developing new features in <a href="/TR/wai-aria-1.1/">ARIA 1.0</a>. <a href="/WAI/ARIA/project">The ARIA Project Plan</a> shows progress on a full suite of ARIA documents, and Accessibility API Mapping (AAM) documents.</p>
+	<p> Accessibility reviews of W3C specifications are proceeding in the <a href="/WAI/APA/">Accessible Platform Architectures</a> (APA) Working Group. The splitting of the previous PFWG per Member reviews has not yet resulted in increased participation in this group, and new participants interested in reviewing accessibility support in W3C specifications are needed and welcome.</p>
+	
+
+	<h2 id="world">W3C in the World</h2>
+	
+	<h3 id="training">Training</h3>
+	<p> The <a href="https://www.edx.org/school/w3cx">W3Cx</a>, a MOOC training program, started in June 2015. Since then, over 200K people enrolled in 3 W3Cx courses (2 editions of HTML5 Part 1 and 1 edition of HTML5 Part 2).</p>
+	<p> HTML5 Part 1 is listed as the <a href="https://www.coursetalk.com/providers/edx/courses">3rd most popular course on edX</a>. We collected excellent feedback from the students both with regard to the quality of the course content but also the fact that it comes from W3C.</p>
+	<p>We are proud that "Intro to HTML5" was developed by Intel, and are working with other W3C Member on courses such as "Intro to CSS", "Intro to JavaScript". </p>
+	<p>W3C training program is multi-tier:</p> 
+	<ul>
+	  <li><a href="http://www.w3devcampus.com/">W3DevCampus</a> is W3C's official online training platform;</li>
+	  <li><a href="https://www.edx.org/course/learn-html5-w3c-w3cx-html5-1x">W3Cx</a> delivers MOOC training;</li>
+	  <li>Corporate training via our training services (following a b-learning model) is available either inter-enterprise or intra-enterprise</li>
+	</ul>
+	
+	<h3 id="liaisons">Liaisons</h3>
+	<p>W3C is involved in <a href="/2001/11/StdLiaison">liaisons and coordination</a> with numerous organizations and SDOs to:</p>
+	<ul>
+	  <li> coordinate our respective agenda</li>
+	  <li> avoid duplication of work</li>
+	  <li> mitigate different milestones timing, different confidentiality rules, different IPR, different vision of the Web</li>
+	  <li> make sure standards are interoperable</li>
+	  <li> ensure the global set of Web and Internet standards form a compatible stack of technologies, at the technical and policy level (patent regime, fragmentation, use in policy making)</li>
+	  <li> promote Standards adoption equally by the industry, the public sector, and the public at large</li>
+	</ul>
+	
+	<p>Ongoing work at the government liaison level, includes ensuring our standards work is officially recognized so that products based on them (often done by our members) are part of procurement orders.</p>
+	<p> We have <a href="/2001/11/StdLiaison#dejure"><abbr title="Approved RS Originator Organization">ARO</abbr>/<abbr title="Publicly Available Specification">PAS</abbr> status with ISO</a>; WCAG 2 became ISO/IEC 40500; MathML became ISO/IEC 40314 (for Pi).</p>
+	<p> In Internet Governance, W3C participates in ICANN, NETMundia Initiative, GIPO, to name a few. Last October, we gave ICANN our <a href="/2015/10/dd-icann-auction.html">input on the New gTLD Auction Proceeds Discussion Paper</a>.</p>
+	
+	<h2 id="org">Organizational evolution</h2>
+	
+	<h3 id="headlights">Headlights 2016</h3>
+	<p>The Team is considering the following <a  href="/wiki/Headlights2016">Headlights 2016</a>:</p>
+	<ul>
+	  <li> Web and Virtual Reality (Dominique Hazaël-Massieux)	  </li>
+	  <li> Cross-device Synchronization (François Daoust)	  </li>
+	  <li> Accessibility Conformance Testing Procedures (Judy Brewer, Shadi Abou-Zahra)	  </li>
+	</ul>
+
+	<h3 id="ab">Advisory Board</h3>
+
+	<h4 id="ab-elections">Elections</h4>
+	<p>As <a href="https://lists.w3.org/Archives/Member/w3c-ac-members/2016JanMar/0030.html">announced</a> to W3C Members early March, we are planning the next Advisory Board election in May. The following seats are up for election:</p>
+	<ul>
+	  <li> Tantek Çelik (Mozilla)</li>
+	  <li> Virginie Galindo (Gemalto)</li>
+	  <li> Jay (Junichi) Kishigami (NTT) </li>
+	  <li> Soohong Daniel Park (Samsung Electronics)</li>
+	  <li> David Singer (Apple) </li>
+	</ul>
+	<p>All terms are for two years and  will start 1 July 2016. Continuing AB participants are Michael Champion (Microsoft), Charles McCathie Nevile (Yandex), Chris Wilson (Google) and Judy Zhu (Alibaba), with terms ending at the end of June 2017.</p>
+
+	<h4 id="ab-tf">Task Forces</h4>
+	<p>Follow AB projects in the <a href="/wiki/AB#Candidate_AB_Priorities_2016">AB Priorities for 2016</a>:</p>
+	<ul>
+	  <li> Supergroups</li>
+	  <li> Best practices for for incubation and transition to rec track</li>
+	  <li> Role of Director </li>
+	  <li> Maintenance 
+	    <ul>
+	      <li> Deprecation of abandoned specs (related to previous <a href="/wiki/AB/2014-2015_Priorities/w3c_work_success" title="AB/2014-2015 Priorities/w3c work success">Identify work not destined for success</a>)</li>
+	      <li> Maintenance/bug fixing of older specs (process implications)</li>
+	    </ul>
+	  </li>
+	  <li> Modern Tools</li>
+	  <li> Voting</li>
+	  <li> Security </li>
+	  <li> External funding and how to deploy team resources </li>
+	  <li> The need to do even more to help in making our community fully global</li>
+	</ul>
+
+	<h3 id="tag">TAG (Technical Architecture Group)</h3>
+	
+	<h4 id="tag-elections">Elections</h4>
+<p>As <a href="/blog/news/archives/5266">announced last January</a>, the W3C Advisory Committee elected the following people to the Technical Architecture Group:
+  <ul>
+	  <li> David Baron (Mozilla)</li>
+	  <li>Andrew Betts (Financial Times / Nikkei)</li>
+	</ul>
+	<p>Both terms are to two years and started in February 2016. Continuing TAG participants, including to the co-Chairs Tim Berners-Lee, Daniel Appelquist (W3C Invited Expert) and Peter Linss (HP), are Travis Leithead (Microsoft), Mark Nottingham (Akamai), Alex Russell (Google), and Hadley Beeman (W3C Invited Expert). The term of Yan Zhu (formerly with Yahoo!) ended lat January.</p>
+	<h4 id="tag-documents">Documents</h4>
+	<p>After the July 2015 face-to-face meeting two findings were published:</p>
+	<ul>
+	  <li> The TAG published last December a Group Note of <a href="/TR/2015/NOTE-security-privacy-questionnaire-20151210/">Self-Review Questionnaire: Security and Privacy</a>, with input from the Privacy Interest Group and WebAppSec, to help editors in making those assessments. This document lists a set of questions one could ask about the security and privacy impact of a new feature or specification, and is meant as a tool that groups or individuals can use as a guide during a self-review, pointing towards important questions in areas where expertise might be lacking.</li>
+	  <li> At TPAC 2015, the TAG offered a resolution relative to the EFF proposal: <a href="/blog/TAG/2015/11/16/strong-web-platform-statement/">Assuring a Strong and Secure Web Platform</a></li>
+	</ul>
+	<h4 id="tag-events">Events</h4>
+	<ul>
+	  <li>The TAG met on 13-15 January 2016 in Melbourne, preceded by a 12 January <a href="/blog/TAG/2015/12/02/ews-melbourne/">TAG Meet-up</a>.</li>
+	  <li>The next <a href="https://ti.to/w3c-tag/meetthetag-london-2016">TAG Meet-up</a> is in London on 29 March, followed by the TAG face-to-face meeting on 29-31 March.</li>
+	</ul>
+	
+	<h2 id="nbt">What is the Next Big Thing?</h2>
+	<p>The next big thing has always been our major area of focus &mdash;true to our mission to lead the Web to its full potential&mdash; strengthening the core, exploring and innovating to eventually expand it. We look at new application areas, features and services, and watch out for the time they are so pervasively used as services by other applications, that the “next generation” of the platform must subsume some of those features.</p>
+
+	<p>Seven candidates bear the potential of growing the capability of the core Open Web Platform. We plan to have a dialog with the Membership at the March 2016 Advisory Committee meeting about viewpoint for this important topic.</p>
+
+	<h3 id="nbt-html">Web extensibility  &amp; (real) Web Applications</h3>
+	<p>The next big thing, now that HTML5 has shipped, is a truly extensible Web and Web applications that behave like real applications. Web extensibility means streamlined application development, simplified testing, better characterization of the core capabilities. The goals look towards reuse, encapsulation, composition, cleaner code. This is what Web Components (HTML) and work in the Houdini task force (CSS Working Group and Technical Architecture Group) are focusing on. For true Web Applications, the time has come to beef up the Service Worker framework by improving the cache model for offline status, allowing lifecycle management (for install and upgrade) as well as the much desired background processing.</p>
+
+	<h3 id="nbt-security">Security</h3>
+	<p>Web security is a key problems of our time as contemporary disruptions such as data theft, malware threats and pervasive surveillance have shown, and as the Open Web Platform continues to grow inceasingly more powerful and as millions of hardware devices of the Internet of Things come online, trust and security are required more than even. The work in Web Crypto, Web application security and Web Authentication is in a position to address Web security.</p>
+
+	<h3 id="nbt-webrtc">WebRTC</h3>
+	<p>The Open Web Platform allows for rich, interactive, cross-platform applications. Real-time conversations are a big thing in life. WebRTC is our initial bid to expand world-class real-time communication services to any connected devisce on any network. As we look at WebRTC.next, upcoming work is on microphone and camera access, and recording. We have to think also how to factor in that work the recent advancements in augmented and virtual reality (see further down.)</p>
+
+	<h3 id="nbt-webpayments">Web Payments</h3>
+	<p>The standards for the next wave of e-Commerce will be safe, and streamlined. With a potential of 1.5 trillion USD annually and having evolved from merchant-centric to customer-centric, the e-Commerce of today is a Web-like experience. It follows an omni-channel model where customers combine in-store and on-line, from laptop or mobile, and where flexibility and security in payment methods are required. From representation of payment flows to the payments initiation architecture, W3C standards expand the capabilities, performance, and interoperability of the Open Web Platform so that the Web better connects humanity with their economic potential.</p>
+
+	<h3 id="nbt-industry">Industry support</h3>
+	<p>There is a vertical industry at least in each of our horizontal key activities to bring the Open Web Platform to its full potential.<!-- (See <a href="#horizontal-vertical">how they intersect</a>.) --> More than 50% of W3C Members joined in 2011 to participate in a specific Vertical, driven by the need to fulfill business promises, and address challenges specific to the Web in a global and inclusive way. As this intensifies, is it indeed our next big thing? </p>
+
+	<h3 id="nbt-wot">Web of Things</h3>
+	<p>The number of connected devices is rising. Juniper research <a href="http://www.juniperresearch.com/press/press-releases/iot-connected-devices-to-triple-to-38-bn-by-2020">estimates</a> that number to rise to 38.5 billion in 2020 (from 13.4 billion in 2015.) The Web of Things is the interoperability layer that sits on top of Internet of Things platforms, breaking the silos and enabling an open market of things. W3C's key value proposition is in the area of semantics and metadata where a scalable web-based framework will be vitally important to enabling interoperability. The Web is fueling transition from costly monolithic software to open markets of apps.</p>
+
+	<h3 id="nbt-vr">Virtual Reality</h3>
+	<p><a href="/wiki/Headlights2016#Web_and_Virtual_Reality">Web and Virtual Reality</a> is a project in the W3C's Headlights 2016 exercise &mdash;where W3C staff identifies potential directions for W3C. As Virtual Reality product and solutions are gaining momentum, we should make sure we understand if and how the Web can play a role in this space, and chart the standardization needs that emerge from it. The applications are massive: games, social, entertainment, Engineering, training, e-Commerce, real-estate, tourism, journalism, etc. Known gaps include codecs, HTML integration, streaming
+Web audio, 3D rendering, movement detection and so forth.</p>
+
+	<h2 id="conclusion">Conclusion</h2>
+	<p>The Web is the most interoperable platform in history. It is transforming Industry and industries are transforming the Open Web Platform. It behooves W3C to continue to extend the Web capabilities, raise the platform to a higher standard of security, make it robust, and powerful for distributed applications and easier to use for developers.</p>
+	<p>The Web, which started as a progressive platform for all humanity, has evolved to be a set of highly useful tools and services. Through our outreach to the digital publishing, automotive, entertainment and telecommunications industries, we are working with the Web community in transforming the Web and enabling it based on how these communities are using the technology and what they need. Through liaisons, developer relations, and growing W3C Membership, we continue to strengthen our bonds with these industries and foster greater interoperability. The growing W3C community is well-positioned to guide the next wave of technology development and to take a leadership role in extending the Open Web Platform to empower and connect humanity in ways that evolves with humanity.</p>
+
+	<div id="footer">
+	  <hr >
+	  <address>
+	    <a href="mailto:coralie@w3.org">Coralie Mercier</a>, W3C Marketing &amp; Communications, Editor<br >
+	    <small>$Id: Overview.html,v 1.42 2016/03/14 20:42:08 coralie Exp $</small><br>
+	    Copyright © 2016 W3C <sup>®</sup> (<a href="http://www.csail.mit.edu/"><abbr title="Massachusetts Institute of Technology">MIT</abbr></a>, <a href="http://www.ercim.eu/"><abbr title="European Research Consortium for Informatics and Mathematics">ERCIM</abbr></a>, <a href="http://www.keio.ac.jp/">Keio</a>, <a href="http://ev.buaa.edu.cn/">Beihang</a>) <a href="/Consortium/Legal/ipr-notice">Usage policies apply</a>.
+	  </address>
+	</div>
+	<!-- footer end -->
+      </div>
+    </div>
+
+    <script type="text/JavaScript">
+      var originalNavClasses;
+      function toggleNav() {
+      var elem = document.getElementById('toc_list');
+      var classes = elem.className;
+      if (originalNavClasses === undefined) {
+      originalNavClasses = classes;
+      }
+      elem.className = /expanded/.test(classes) ? originalNavClasses : originalNavClasses + ' expanded';
+      }
+    </script>
+
+</body>
+</html>
