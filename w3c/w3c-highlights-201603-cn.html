@@ -152,125 +152,121 @@
 	<h2 id="intro">1. 概述</h2>
 	<p>W3C将在扩展开放Web平台的同时，继续增强其安全性以及对Web用户隐私的保护。当谈及安全的问题是，每一个人都很关心。我们将把Web安全提到前所未有的高度，确保关于Web安全具体的需求被满足，并且与工业界、学术界、广大公众以及其他标准化组织一起。</p>
 	<blockquote>
-	  <p>"When strong authentication is easy to deploy, we make the Web safer for daily use, personal and commercial. With the scope and frequency of attacks increasing, it is imperative for W3C to develop new standards and best practices for increased security on the Web."</p>
-	  <address class="QuotAttr">Sir Tim Berners-Lee, Web Inventor and W3C Director.</address>
+	  <p>"如果在Web上能够更加容易的部署强认证（strong authentication）方法，Web在服务于日常生活、个人和商业时变得更加安全。随着网络攻击的范围和频率持续增加，W3C需要开发新的标准和最佳实践，来提升Web的安全性。"</p>
+	  <address class="QuotAttr">Web发明人，W3C创始人 Tim Berners-Lee。</address>
 	</blockquote>
-	<p>Strengthening and securing the core is a requirement. Another is to be on the lookout for emerging areas, exploring what new application areas in general might mean for the underlying Open Web Platform, looking at where the Web is going to be able to identify where interoperability is needed in the new Web. W3C continues to think about the future of the Web. See below a few candidates which bear the potential of growing the capability of the core Open Web Platform.</p>
-	<p>In parallel, we have broadened our focus on vertical industries. Application Foundations of the Open Web Platform are fluid in nature given their multiple interconnections —such as Security implications of device interactions, or Accessibility considerations of streaming media— but the future of the Web is informed by the future of Industry. Most are building their business on the Web and participate in our work to address Web-specific requirements they have. Those requirements fit into more than one Vertical aspect and accross several of our key horizontal activities. Our Industry Vertical Champion Program shapes the future of the Web in the Industry.</p>
-	<p>The Web is a set of technologies for developing distributed applications with the greatest interoperability in history. According to a <a href="http://www.visionmobile.com/product/developer-economics-state-of-the-developer-nation-q3-2015/">survey last July</a>, 47% of developers are using HTML5, CSS, and JavaScript when building applications —up 5% in a year. The promise of the Open Web Platform is to lower the cost of developing powerful applications to reach the most people, on any device. We continue to attempt to capture this focus on developers through our <a href="/appfoundations/">Application Foundations</a> framework.</p>
+	<p>不断增强Web技术的核心，并使之更加安全，这一直是W3C面临的重要需求。与此同时，我们还在不断的寻找新的增长点, 不断探索新的应用领域会给下层的开放Web平台带来什么新的需求，不断寻找和识别Web中可能存在的新的互操作性需求。 W3C在持续的思考Web的未来。下面是一些不断提升开放Web平台的能力和潜力的候选技术。</p>
+	<p>在增强Web核心的同时，我们也在持续延伸Web技术在不同垂直领域的应用。开放Web平台的应用基础（Application Foundations）的不断生长，也在不同的支撑技术之间建立其相互联系，如设备交互中的安全（Security implications of device interactions）、流媒体中的可访问性（Accessibility）考虑等。但我们清楚，Web的未来与整个产业界的未来息息相关。许多机构在Web上构建自己的业务系统，他们加入W3C来解决他们面对的特定于Web的需求。这些需求的满足可能不只服务于这个垂直领域，或许可能对很多关键的横向技术标准工作都产生深远影响 。W3C的行业垂直领域计划（Industry Vertical Champion Program）正在试图在不同的行业领域中重塑 Web的未来。</p>
+	<p>Web在历史上是一组用于开发具有极好互操作能力的分布式应用的技术体系。根据<a href="http://www.visionmobile.com/product/developer-economics-state-of-the-developer-nation-q3-2015/">一份2015年7月的调查</a>，有47%的开发者在使用 HTML5、CSS以及JavaScript来开发各类应用，这一数字比上一年度增长了 5%。开放Web平台的承诺是：降低开发具有强大功能的Web应用的成本，从而使这些应用服务于更广泛的大众群体，并运行于任何设备之上。通过 Web 的 <a href="/appfoundations/">应用基础</a> 框架，我们持续不断地捕捉来自开发者社区的关切问题。</p>
 	
 	<h2 id="security">2. 安全</h2>
 	<p>Web安全持续成为Web平台和W3C关心的首要问题。Web是一个被广泛使用且具有多样性的平台，新的功能不断被添加进来——社交网络、视频、移动等，所有这些Web平台的新生事物都不断增强平台的影响力，并持续满足相关产业界的需求。W3C 也按照 Web用户安全、Web应用安全、Web平台安全的优先级顺序，不断致力于解决 Web平台的安全问题。</p>
-	<p>We have taken a number of steps since TPAC 2015 to improve the security and privacy of the Web Platform and two upcoming Web security milestones are WebCrypto &amp; Killing Passwords.</p>
+	<p>自 TPAC 2015 以来，我们增强Web的安全和隐私方面开展了一系列工作，其中最重要的两个里程碑是 Web加密（WebCrypto）和替代用户名－口令的新型Web认证方式。</p>
 	<ul>
-	  <li>Progress in Web Application Security enable Web Application developers to secure their apps, cooperate with the browser environment on enforcement of security policies, and make it easier for large deployed sites to upgrade their security to HTTPS.
+	  <li>在Web应用安全方面，我们允许Web应用的开发者进一步增强其应用的安全性，使应用可以更好的和浏览器环境一起满足用户的安全策略，并让大规模的Web站点更易于将其访问升级为 HTTPS 的加密访问。
 	  </li>
-	  <li>Killing Passwords: <a href="/2016/02/securewebauthwg.html.en">Launched</a> in February, the <a href="/Webauthn/">Web Authentication Working group</a> will specify a Web API for strong authentication on the Web; a real opportunity to move beyond passwords to a more usable and more secure authentication experience on the Web.
+	  <li>口令认证机制的替代方案（Killing Passwords）：2016年2月，W3C正式 <a href="/2016/02/securewebauthwg.html.en">启动了安全Web认证的标准化工作</a>，新设立的<a href="/Webauthn/">Web认证工作组（Web Authentication Working group）</a> 将提出一在 Web API，为Web提供强认证，为Web用户提供更加易用、安全的身份认证体验，从而完全超越现在被广泛采用的口令认证机制。
 	  </li>
 	</ul>
 	
 	<h3 id="crypto-authn">2.1 Web加密与认证</h3>
-	<p>The <a href="/TR/WebCryptoAPI/">Web Cryptography API</a>, anticipated to progress to Proposed Recommendatio, is about performing basic cryptographic operations in web applications. These are core components for libraries to build upon, avoiding the need for developers to "roll their own" solutions.</p>
-	<p>The <a href="/2015/12/web-authentication-charter.html">Web Authentication Working Group charter</a> illustrates another field where the standardization pushed by W3C serves the telecommunications industry: the adoption of the FIDO-based authentication methods in browsers promises to simplify identity management, an important need that operators can both help fulfill and benefit from. Chartered to specify a Web API for strong authentication on the Web, this work gives us the real opportunity to move beyond passwords, to a more usable and more secure authentication experience on the Web.</p>
+	<p>W3C已经发布了 <a href="/TR/WebCryptoAPI/">Web加密API（Web Cryptography API）</a>的提案推荐标准（Proposed Recommendation），帮助Web应用更好的执行基本密码学操作。这些标准化工作是构建许多功能库的基础，也可以避免开发者重复开发各自的解决方案，避免可能引发的互操作性问题。</p>
+	<p>已经发布的 <a href="/2015/12/web-authentication-charter.html">Web认证工作组章程</a> 描绘了 W3C 可以为电信行业提供标准化工作平台的另一项工作：通过在浏览器中采用基于 FIDO 的认证方法，可以简化 Web应用的身份管理（identity management）。这是电信运营商的一项重要需求，同时也是电信运行商可以贡献力量并从中获益的重要舞台。该章程指出，工作组将致力于开发一组 Web API来加强 Web的认证机制，从而帮助我们真正超越口令认证，为Web 提供更易用、更安全的认证解决方案。</p>
 	
 	<h3 id="hasec">2.2 硬件安全（Hardware-Based Security）</h3>
-	<p>With the prospects of bringing the high security ensured by hardware-tokens to the Web platform, we are continuing development of a Hardware Security Working Group draft charter.</p>
+	<p>由于硬件令牌（hardware token）可以为Web平台带来很高的安全性保证，W3C 正在逐步开展 硬件安全工作组（Hardware Security Working Group）的章程制定工作。</p>
 	
-	<p>There are a number of use cases that this standard will enable, including but not limited to the ability to manage credential information for hardware-based security modules, and the ability to access specific security sensitive services offered by hardware tokens such as Payments transaction authorization andd Identity verification. </p>
+	<p>我们已经识别了一组用例和标准化需求，包括但不局限于以下内容：为基于硬件的安全提供管理信任证信息（credential information）能力的模块，在支付交易等场景中访问基于硬件令牌的安全敏感的服务（security sensitive services）实现身份验证与交易授权等。</p>
 	
 	<h3 id="webappsec">2.3 Web应用安全</h3>
-	<p>Content Security Policy Level 2, Mixed Content, Subresource Integrity, and Upgrade Insecure Requests are all Candidate Recommendations. These specs enable Web Application developers to secure their apps, cooperate with the browser environment on enforcement of security policies, and make it easier for large deployed sites to upgrade their security to HTTPS. Another significant deliverable from WebAppSec is the advancement to <a href="/TR/2016/WD-CSP3-20160126/">FPWD of Content Security Policy Level 3</a> late January.</p>
-	<p>Drawing upon these specifications, <a href="/blog/news/archives/5263">W3C upgraded its own website to HTTPS</a>, offering encrypted, integrity-protected access to W3C resources and Recommendations.</p>
+	<p>W3C发布了一系列与Web应用及内容安全相关的标准，包括内容安全策略（Content Security Policy Level 2）、混合内容（ Mixed Content）、子资源完整性（Subresource Integrity），以及升级非安全请求（Upgrade Insecure Requests）等标准工作都已经推进到候选推荐标准（Candidate Recommendations）阶段。这些规范的制定帮助Web应用的开发者增强其应用的安全性，使应用能够和浏览器环境更好的互动，强制执行用户提出的安全策略，并帮助大规模王震更容易的升级到基于 HTTPS 的安全请求中。Web应用安全工作组的另一项重要进展是在2016年1月下旬发布了<a href="/TR/2016/WD-CSP3-20160126/">内容安全策略（Content Security Policy Level 3）</a>的首份标准工作草案。</p>
+	<p>在发布标准及其草案的同时， <a href="/blog/news/archives/5263">W3C还将其官方网站升级到 HTTPS</a>，使Web用户及开发者能够通过加密的、提供完整性保护的方式访问 W3C的各类资源及技术规范。</p>
 	
-	<h3>Security and Privacy Reviews</h3>
-	<p>We are systematically asking for Security and Privacy Considerations in charters and specification development. The TAG published a draft <a href="/TR/2015/NOTE-security-privacy-questionnaire-20151210/">Security and Privacy Self-Review Questionnaire</a>, with input from the Privacy Interest Group (PING) and Web Application Security Working Group, to help editors in making those assessments.</p>
-	<p>PING and Web Security Interest Group offer assistance with specification review, and the Director will look for Security and Privacy Considerations at specification transitions.</p>
+	<h3>审阅W3C技术文档中可能存在的安全与隐私问题</h3>
+	<p>在W3C制定工作组章程和开发技术标准的过程中，我们通过系统化的方法确保对其中可能的安全与隐私问题进行细致考虑。W3C的技术架构组（TAG）与隐私保护兴趣组（Privacy Interest Group，PING）及Web应用安全工作组的共同努力下，发布了 <a href="/TR/2015/NOTE-security-privacy-questionnaire-20151210/">安全与隐私自评估问题清单（Security and Privacy Self-Review Questionnaire）</a>的草案，帮助各个工作组的标准编辑确保在标准开发过程中开展与安全、隐私相关的评估。</p>
+	<p>隐私保护兴趣组（PING）与Web安全兴趣组（Web Security Interest Group）在标准的安全与隐私保护审查中提供帮助，W3C理事长（Director）也将在标准推进过程中对安全和隐私保护考虑进行审查。</p>
 	
 	<h3 id="privacy">2.4 隐私保护</h3>
-	<p>The Tracking Protection Working Group sent the <a href="/TR/2015/CR-tracking-dnt-20150820/">Tracking Preference Expression (TPE)</a> to Candidate Recommendation and the Compliance Specification is almost there. These specs give a mechanism for expressing tracking preferences, and by which sites can indicate their compliance with user requests.</p>
-	<p>PING published a draft of <a href="/TR/fingerprinting-guidance/">Fingerprinting Guidance for Web Specification Authors</a>.</p>
-	
+	<p>W3C的追踪保护工作组（Tracking Protection Working Group）发布了 <a href="/TR/2015/CR-tracking-dnt-20150820/">追踪偏好表达（Tracking Preference Expression ，TPE)</a> 的候选推荐标准，而追踪范围的符合性规范（Compliance Specification）也基本完成。这些技术规范为Web用户及Web应用开发者提供了一种标准机制来表达其对网络行为追踪的偏好（是否允许Web应用追踪用户行为），并使Web应用能够就是否符合用户的追踪偏好要求做出说明。</p>
+	<p>隐私保护兴趣组（PING）还发布了 <a href="/TR/fingerprinting-guidance/">Web规范作者获取浏览器指纹指南（Fingerprinting Guidance for Web Specification Authors），建议新的Web标准在开发过程中，应如何避免过度收集用户通过浏览器访问时的各种指纹信息。</a>.</p>
 	
 	<h2 id="champions">3. 基于开放Web平台的产业领域</h2>
-	<p>As the impact of the Open Web Platform has grown, several industries are building their business platforms on top of the Web and using Web technology.</p>
-	<p>Last October <a href="https://www.w3.org/2015/10/w3c-highlights/#verticals">we presented</a> why the Industry is important to the Web and vice-versa, and introduced the Industry Vertical Champion Program,</p>
+	<p>随着开放Web平台的影响力不断扩大，一些垂直行业领域正在采用Web技术，在开放Web平台之上构造其业务平台。</p>
+	<p>2015年10月，<a href="https://www.w3.org/2015/10/w3c-highlights/#verticals">W3C 阐述了关注垂直领域对Web发展的重要性，也指出Web对这些垂直领域发展的积极作用</a>，在此基础上，W3C启动了垂直领域提升计划（Industry Vertical Champion Program），其目的是：</p>
 	<ul>
-	  <li>to understand at a deep level the Web technology needs of the industry,</li>
-	  <li>to understand what is important today and what will be important in the future,</li>
-	  <li>to map the industry needs into specific Web technology needs, and</li>
-	  <li>to address real, near-term business problems within the context of the core values of the Web ...</li>
-	  <li>... in a global and inclusive way.</li>
+	  <li>在更深层次上理解不同垂直领域对Web技术的新需求。</li>
+	  <li>理解不同垂直领域的发展现状及未来趋势。</li>
+	  <li>将不同垂直领域对Web技术的需求转化为Web技术的新增长点。</li>
+	  <li>在Web的核心价值下，解决不同垂直领域中真实存在的、能满足行业短期商业需要的瓶颈技术问题。</li>
+	  <li>.在全球化产业发展的视野下，以非排他（clusive）的方式满足不同垂直领域的需求。</li>
 	</ul>
 
 
 	<h3 id="automotive">3.1 汽车</h3>
-	<p>Automotive's future is made of rich user experiences, greater security and smarter location-based services. Drivers and passengers demand the same rich user experiences in vehicles that they enjoy with all their mobile and other devices. HTML5 and the Open Web Platform offer the best roadmap for new services, increased security and interoperability.</p>
-	<p>W3C has been working with GENIVI to enhance our work with the automotive industry to the level of having a strong shared vision and partnership. The GENIVI Alliance is a non-profit automotive industry alliance committed to driving the broad adoption of an In-Vehicle Infotainment (IVI) open-source development platform.</p>
-	<p>The <a href="/2014/automotive/">Automotive Working Group</a> is <a href="/TR/#tr_Automotive">advancing on the Recommendation Track</a> the W3C Vehicle Information API, which aims to enable connectivity through in-vehicle infotainment systems and vehicle data access protocols and can be leveraged by web applications running on mobile devices that access the data resources of a connected passenger vehicle. A companion, the Vehical Data API, defines a standard for Vehicle Data which might be available in a vehicle.</p>
-	<p>The group is now engaging with different stakeholders and consumer groups in addressing data rights, and has established a Privacy and Security Task Force for Automotive.</p>
-	<p>The Automotive and Web Platform Business Group, formed back in 2013, is pursuing work on a Location-Based Services API, and has handed use cases for automotive Media Tuner needs to the TV Control API Community Group. A draft charter for a TV Control Working Group is in the work.
+	<p>汽车行业在未来需要为用户提供丰富的用户体验，更安全、更智能的位置服务。汽车的驾驶员和乘客都要求车辆能够提供更丰富的用户体验，并能够帮助他们更好的与移动设备和其他关联设备互动。HTML5 及 开放Web平台为面向汽车行业研发更安全及可广泛互操作的新应用及服务提供了可能的实现途径。</p>
+	<p>W3C正在与 GENIVI 一起同汽车行业紧密合作，形成了重要的共识。GENIVI 联盟（GENIVI Alliance）是汽车行业的非盈利联盟，致力于开发开源的车内信息系统平台。</p>
+	<p>W3C的 <a href="/2014/automotive/">汽车工作组（Automotive Working Group）</a> 正在 <a href="/TR/#tr_Automotive">积极推进 汽车信息API（Vehicle Information API）的标准化工作</a>，该规范将车载信息娱乐系统（in-vehicle infotainment system）与汽车的数据访问协议结合起来，允许运行在移动端上的Web应用通过标准接口访问网联汽车的实时状态数据。与此同时，W3C还定义了车辆数据API（Vehical Data API），标准化车辆数据的结构与交互格式。</p>
+	<p>目前，该工作组正在与该领域不同的利益相关方及消费者团体共同工作，解决数据使用权问题，并建立了关于车辆数据的隐私保护和安全任务组（Privacy and Security Task Force for Automotive）。</p>
+	<p>成立于2013年的汽车与Web平台商务组（Automotive and Web Platform Business Group）正在开展位置服务API （Location-Based Services API）的工作，并已向电视控制API社区组（TV Control API Community Group）提及了关于车载媒体控制（automotive media tuner）的应用场景与具体用例，并在电视控制API社区组开展标准草案的起草工作。
 	</p>
-<p>The Open Web Platform helps reduce costs and complexity by replacing multiple proprietary approaches with a simplified global solution. Web applications built for vehicles using smartphones or embedded solutions are delivered as products or services. Areas where the Web can help auto:</p>
+<p>开放Web平台通过提供一个简单、全球统一的解决方案，能够帮助有效降低成本和复杂性。为车载需求开发的Web应用可以运行在移动终端及嵌入式解决方案中，向用户提供产品或服务。Web技术可以帮助汽车行业：</p>
 	<ul>
-	  <li>Reducing driver distraction and improving safety</li>
-	  <li>Location-based services, shopping, and customer engagement</li>
-	  <li>Enhanced driving experiences and situational awareness</li>
-	  <li>Integrating home, work, and travel</li>
+	  <li>降低驾驶员的注意力不集中行为，提高道路交通安全。</li>
+	  <li>为驾驶员及乘客提供丰富的服务（如基于位置的服务、在线购买与支付服务等），提升用户粘性。</li>
+	  <li>增强驾驶体验，帮助驾驶员感知车辆状态。</li>
+	  <li>跨越家、工作场及旅途提供整合的、持续的用户体验。</li>
 	</ul>
 	
 	<h3 id="digital-marketing">3.2 数字营销（Digital Marketing）</h3>
-	<p>W3C continues to explore this emerging industry vertical. The September 2015 <a href="/2015/digital-marketing-workshop/index.html">Digital Marketing workshop</a> identified three streams of work:</p>
+	<p>W3C正在持续探索这一新兴的行业领域。在2015年9月举行的 <a href="/2015/digital-marketing-workshop/index.html">数字营销技术研讨会（Digital Marketing workshop）</a> 上，识别出来下面三项主要工作：</p>
 	<ul>
-	  <li>Security, reflected in the RequestVisibility API work underway in the Web Application Security Working Group</li>
-	  <li>Advertising</li>
-	  <li>Incentives</li>
+	  <li>数字营销的Web安全需求：这将映射到 Web应用安全工作组正在开展的 请求可见性 API （RequestVisibility API）的标准化工作中</li>
+	  <li>广告发布（Advertising）</li>
+	  <li>激励机制（Incentives）</li>
 	</ul>
-	<p>A draft Digital Advertising Interest Group seeks to provide a forum for technical discussions to identify Advertising use cases and requirements to achieve a simpler, more direct, dependable, and reliable model to deliver and measure ads on the web. An Incentives Interest Group would address web-based customer relations, improving the ability to customize loyalty programs and offers, responsive to users' privacy and purchasing interests.</p>
-	<p>W3C is considering an e-Commerce W3C Workshop later in 2016. Consumer purchasing behaviour is shifting to mobile and the revenue generated by advertising or functionality or entertainment in exchange for a purchase price, is dwarfed by the quantity of e-Commerce transactions being conducted through mobile applications.</p>
+	<p>正在成立中的数字营销兴趣组（Digital Advertising Interest Group）正视图建立一个技术论坛，在这里讨论并识别在线广告等基于Web的数字营销行为的用例和技术需求，从而建立能够实现更简单、更直接、更可信（dependable）、更可靠（reliable）的，基于Web的广告发布、推送与广告效果度量平台。此外，激励机制兴趣组（Incentives Interest Group）将致力于解决基于Web的客户关系管理平台中可能存在的技术问题，提升客户忠诚度计划（loyalty programs）的定制化水平，并为用户的购买行为等提供隐私保护能力。</p>
+	<p>W3C正在考虑在2016年下半年举行电子商务技术研讨会（e-Commerce W3C Workshop）。客户的购买行为正在向移动端迁移，而由广告、其他功能性及娱乐性功能所带来的整体收益则直接受到在移动端Web应用承载的电子商务交易的数量和质量。</p>
 	
 	<h3 id="digital-publishing">3.3 数字出版（Digital Publishing）</h3>
-	<p>To change the way books, magazines and journals are created and published, the <a href="/2015/09/digpubig">Digital Publishing Interest Group</a> is continuing work on Portable Web Publications, having issued several drafts of <a href="/TR/pwp/">Portable Web Publications for the Open Web Platform</a> —a vision for the future of digital publishing that achieves full convergence between online and offline documents— and has set up task forces on archiving and locators. The group collaborates with the ARIA Working Group for accessibility concerns, and the CSS Working Group on various issues related to the needs of the Digital Publishing Community.</p>
-	<p>Additional Public Working Drafts published recently include <a href="/TR/2014/WD-dpub-latinreq-20140930/">Requirements for Latin Text Layout and Pagination</a> and <a href="/TR/2015/WD-dpub-aria-1.0-20151119/">Digital Publishing WAI-ARIA Module 1.0</a>.</p>
-	
+	<p>为了改变图书、杂志、期刊的创建和发布方式，W3C的 <a href="/2015/09/digpubig">数字出版兴趣组（Digital Publishing Interest Group）</a> 正在致力于便携式Web出版物（Portable Web Publications）的标准化工作，目前已经发布了 <a href="/TR/pwp/">面向开放Web平台的便携式Web出版物（Portable Web Publications for the Open Web Platform）</a> 的多份工作草案，这份文档阐述了W3C对未来数字出版物如何跨越在线文档和离线文档的愿景。同时，W3C也设立了特别任务组来推进这一工作。工作组还与Web无障碍计划（WAI）的ARIA工作组联合工作，解决数字出版中的信息无障碍关切；与CSS工作组联合工作，满足数字出版领域对基于Web的内容呈现与样式等的需求。</p>
+	<p>在这一领域，最近发布的工作草案还包括 <a href="/TR/2014/WD-dpub-latinreq-20140930/">拉丁文字布局和分页需求（Requirements for Latin Text Layout and Pagination）</a>以及 <a href="/TR/2015/WD-dpub-aria-1.0-20151119/">数字出版WAI-ARIA模块1.0（Digital Publishing WAI-ARIA Module 1.0）</a>。</p>
 	
 	<h3 id="entertainment">3.4 娱乐（Entertainment）</h3>
 	<h4 id="html-media">HTML媒体</h4>
-	<p>The industry and the Consortium choice is to enhance HTML to be capable of playing video content without the help of plug-in video players, streaming technologies over HTTP such as Dynamic Adaptive Streaming over HTTP (DASH) has rapidly emerged in the industry. W3C took to develop two HTML5 extensions to enable <abbr title="User Agent">UA</abbr>s to play such streams. 
+	<p>W3C与Web上的在线视频等娱乐行业的一致选择是：增强 HTML，使之能够在不依赖第三方插件的基础下实现在线视频内容播放，并支持在这个行业中广泛应用的基于HTTP的流媒体技术（即基于HTTP的动态自适应流，Dynamic Adaptive Streaming over HTTP，简称 DASH）。W3C 正在开发两个 HTML5 扩展来加强包括浏览器在内的各种<abbr title="User Agent">用户代理（User Agent）</abbr>来支持 DASH 流媒体。</p>
+	<p>这些扩展是对于满足该行业基于Web实现视频内容投放的业务需求而言是至关重要的，这使Web应用能够更灵活的控制媒体内容，并支持诸如动态广告植入（dynamic ad-insertion）等更加丰富的服务。</p>
+	<p>HTML 媒体（HTML Media）是 Web平台的核心媒体支持特性，由W3C的HTML媒体扩展工作组研发（此前该工作由HTML工作组承担），目前，一个称为Web平台工作组（Web Platform Working Group）的新工作组正在延续之前 HTML 工作组的使命，继续开发其他核心Web平台的新特性。
 	</p>
-<p>These extensions are essential to meet the industry requirements for video content delivery on the Web, by providing Web apps with more flexible control over video content, which enable advanced services such as dynamic ad-insertion.
-	</p>
-<p>HTML Media, core media features of Web platform, is developed in HTML (Media Extensions) Working Group, previously called the HTML Working Group, while new features of core Web standards are crafted in Web Platform Working Group.
-	</p>
-	<p>Ongoing work:</p>
+	<p>正在开展的工作：</p>
 	<ul>
-	  <li> The HTML (Media Extensions) WG is currently working on two extensions: Media Source Extensions (MSE) and Encrypted Media Extensions (EME).</li>
-	  <li> MSE is a candidate recommendation that allows JavaScript to send byte streams to media codecs within Web browsers that support HTML5 video. (<a href="https://github.com/w3c/media-source">MSE on Github</a>)</li>
-	  <li> EME is a working draft for providing a communication channel between Web browsers and digital rights management (DRM) agent software. This allows the use of HTML5 video to play back DRM-wrapped content such as streaming video services without the need for third-party media plugins like Adobe Flash or Microsoft Silverlight. (<a href="https://github.com/w3c/encrypted-media/">EME on Github</a>)</li>
-	  <li> version 1.0 of the two extensions are planned to become W3C Recommendations sometime by the end of this year. </li>
-	  <li> There are some industry requests to include additional features such as continuous key rotation to meet original requirements of extensions. The group is in the process of deciding which feature should go to version 1.0. TPAC 2016 will be an important milestone for this work.</li>
-	  <li> To make them RECs in time, the group is putting more efforts on improving testing.</li>
+	  <li> HTML（媒体扩展）工作组正在开展两项 HTML 扩展的标准研发工作：媒体源扩展（Media Source Extensions，MSE）和加密媒体扩展（Encrypted Media Extensions，EME）。</li>
+	  <li> 目前已经发布了媒体源扩展（MSE）的候选推荐标准（candidate recommendation），该规范允许 JavaScript 向Web浏览器内置的、支持HTML5 视频的媒体编码器（codecs）发送字节流。更多内容详见<a href="https://github.com/w3c/media-source">Github上的MSE规范编辑草案</a>。</li>
+	  <li> 加密媒体扩展（EME）目前还在工作草案（working draft）阶段，它为Web浏览器与数字版权管理（DRM）代理软件之间提供了一个通信通道。基于这个通信通道，Web开发者可以在不使用任何第三方媒体插件（如 Adobe Flash或 Microsoft Silverlight），直接通过 HTML5 视频（video）来播放被 DRM 封装的视频内容（如流媒体服务）。更多内容详见 (<a href="https://github.com/w3c/encrypted-media/">Github上的EME规范编辑草案</a>。</li>
+	  <li> W3C计划在2016年底前发布这两份 HTML 扩展的 1.0版本正式推荐标准。</li>
+	  <li> 有一些来自产业界的需求，希望将持续的密钥更新（continuous key rotation）等更多的扩展特性加入进来。该工作组正在决定这些扩展特性哪些应当称为 1.0 版的内容。今年下半年举行的 TPAC 2016会成为该项工作的一个重要里程碑。</li>
+	  <li> 为了确保上述工作及时推进到正式推荐标准（RECs），该工作组也在推进标准制定的同时加强标准的测试工作。</li>
 	</ul>
 	
 	<h4 id="second-screen">第二屏工作组（Second Screen Working Group）</h4>
-	<p>Web content is available on an ever expanding array of devices including eBook readers, phones, tablets, laptops, auto displays, and electronic billboards, and there are a variety of mechanisms that allow these devices to use secondary display screens available in the local environment, attached by wired connections or remotely with wireless, peer-to-peer media. However, in most cases, lower layers such as OS provide those connection mechanisms, which Web apps, consequently, have no access and control over. Web apps should be capable of implementing services which cover scenarios such as using a big screen device to watch a movie selected on and streamed from a smartphone are getting more common as <abbr title="Over-the-top content">OTT</abbr> services like Netflix emerge.
+	<p>Web内容正延伸到大量的设备上：电子书阅读器、智能手机、平板电脑、笔记本电脑、车载显示终端 以及各类电子显示屏上。与此同时，出现了一大批技术支撑在一个局域环境中连接设备并共享屏幕， 如通过有线电缆或无限网络互联设备、点到点的媒体共享（peer-to-peer media）等。但是，在很多场景中，这些连接机制往往由底层的操作系统直接提供，Web应用很难直接访问和控制这些连接能力。在类似 Netflix 等基于<abbr title="Over-the-top content">OTT</abbr> 的服务中，用户使用大屏幕设备（如投影仪、智能电视等）观看来自智能手机等移动终端上Web应用中播放的视频及流媒体的场景正在变得普遍。
 	</p>
-<p>The <a href="/2014/secondscreen/">Second Screen Working Group</a> aims at defining simple APIs that allow web applications to show and control web content on one or more secondary displays. Some of the group's work is incubated in the <a href="/community/webscreens/">Second Screen Community Group</a>.
+<p>The <a href="/2014/secondscreen/">第二屏工作组（Second Screen Working Group）</a> 正是希望定义一组简单的 API，允许Web应用在一个或多个显示设备上呈现和控制 Web内容。该工作组的一些早期工作来源于W3C的 <a href="/community/webscreens/">第二屏社区组（Second Screen Community Group）</a>。
 	</p>
-	<p>Ongoing work:</p>
+	<p>正在开展的工作：</p>
 	<ul>
-	  <li> Focus in 2015 was on the <a href="https://w3c.github.io/presentation-api/">Presentation API</a>. The interfaces defined in this specification have stabilized and the specification should move forward to Candidate Recommendation by mid-2016.</li>
-	  <li> In parallel to the Presentation API, the group is now also developing the <a href="https://w3c.github.io/remote-playback/">Remote Playback API</a> that allows controlling remote playback of media from a web page.</li>
+	  <li> 2015年，工作组主要聚焦 <a href="https://w3c.github.io/presentation-api/">呈现API（Presentation API）</a>。该规范中定义的特性已经基本稳定。W3C计划在2016年中期发布该规范的候选推荐标准（Candidate Recommendation）。</li>
+	  <li> 在推进“呈现API”的同时，工作组还在研发 <a href="https://w3c.github.io/remote-playback/">远程回放API（Remote Playback API）</a> ，允许对在Web页面中媒体进行控制和远程回放。</li>
 	</ul>
 	
 	<h4 id="cloud-browser">云浏览器任务组（Cloud Browser Task Force）</h4>
-	<p>The <a href="/2011/webtv/wiki/Main_Page/Cloud_Browser_TF">Cloud Browser Task Force</a>, a subset of the <a href="/2011/webtv/">Web and TV Interest Group</a>, discusses support for web browser technology within devices such as HDMI dongles and lightweight <abbr title="set-top box">STB</abbr>s.<br>
-	  New cloud browser Runtime Environments (RTEs) require the definition of APIs that would enable communication between the cloud browser and the client. The Task Force will look into use cases, requirements and gaps in cloud UI architectures. 
+	<p>W3C的 <a href="/2011/webtv/wiki/Main_Page/Cloud_Browser_TF">云浏览器特别任务组（Cloud Browser Task Force）</a>是 W3C <a href="/2011/webtv/">Web 与电视兴趣组（Web and TV Interest Group）</a>工作的一部分，讨论如何支持将 Web浏览器与 HDMI dongles 及轻量级 <abbr title="set-top box">机顶盒（STB）</abbr>技术融合。<br>
+	  新的云浏览器运行环境（cloud browser Runtime Environments，RTEs）需要定义一组新的API，支持云浏览器与客户端之间的通信。该任务组将进一步识别应用场景和用例，提取目前Web技术在满足云交互（cloud UI）体系结构中所面临的技术瓶颈。 
 	</p>
-	<p>Ongoing work:</p>
+	<p>正在开展的工作：</p>
 	<ul>
-	  <li> To enable arbitrary Web apps to run on cloud browser RTEs, we need to modify some existing W3C APIs such as MSE and EME for video delivery services. This Task Force will figure out such gaps between cloud browser RTEs and existing Web standards.</li>
-	  <li> The Task Force deals with not only TV-like-service-centric use cases but also use cases from other industries such as gaming, signage, etc, if the TF gets interest or contribution from the stakeholders.</li>
-	  <li> This technology can achieve architectural flexibility about User Agents or Web browsers, which can provide users with better privacy and security; and cloud service providers with a different level of control over Web browsing features.</li>
+	  <li> 为了支持任意Web应用在云浏览器运行环境（cloud browser RTEs）上的运行，需要修改面向视频播放服务的 MSE、EME等现有的W3C API。该任务组将识别出云浏览器RTE与现有Web标准之间的技术差距。</li>
+	  <li> 任务组不仅关注以电视为中心的服务（TV-like-service-centric）场景，同时也关注在线游戏、电子标牌（sinage）等其他应用场景，并希望得到这些场景的利益相关方的支持和贡献。</li>
+	  <li> 这一系列技术可以从用户代理或Web浏览器中继承很多体系结构上的灵活性，同时帮助用户获得更好的隐私保护和安全性提升，云服务提供商可以在Web 浏览器特性之上获得对服务和内容的另一个层次的控制。</li>
 	</ul>
 	
 	<h4 id="ggie">屏幕到屏幕互联网生态系统（GGIE ，Glass-to-Glass Internet Ecosystem）任务组</h4>
