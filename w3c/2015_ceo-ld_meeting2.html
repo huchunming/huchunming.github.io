@@ -53,10 +53,10 @@
 <section id="CRSNet"><h2>2. CRSNet项目</h2>
 <p>来自中科院遥感与数字地球所的李国庆研究员介绍了他的研究组在中国遥感网络（China Remote Sensing Network，CRSNet）项目的进展。该项目启动与2011年，并将于近期完成。在这个项目的重点并不是地理覆盖数据的共享，但该项目所面对的挑战与CEO-LD项目要解决的问题非常相关。</p>
 <p>该项目分为两个阶段：建设资源，并建立集成平台；通过使用各类传感数据在全球范围内解决问题。该项目提供了超过 40种“公共服务（Common Products）”来提供应用服务，覆盖辐射监测（radiation budgets）, 农作物监测（vegetation structures）, 全球冰川变化（global ice change），这些应用使用了分布在不同时间和空间尺度上的观测数据。李国庆认为，当处理类似这些应用所需的多维数据时，因为数据量大、处理逻辑复杂，我们不能完全依靠在线处理（online-processing），很多处理需要离线进行（offline），并将离线处理的结果作为一类“产品”提供给Web应用，支持跨越多维数据的分析。</p>
-<p>The geo and temporal aspects are not sufficient for such products: it is necessary to process things like the waveband(s) of the readings, and the underlying semantics. This is where the Linked Data approach holds most promise as it may overcome the need to have a specialist on the team who understands each of the datasets in detail.</p>
-<p>One facet of creating pre-determined Common Products is that there are only 3 levels of granularity (10m, 100m and 1km). So if the data has a granularity of, say, 30m, then it has to be normalised to 10m. In temporal terms, the data may be available twice a day but the tool only wants the data every 8 days and so, again, the broker has to take care of that mismatch. It should also be noted that although the focus of this project is satellite data, CRSNet also makes use of data from in situ and  airborne sensors, the latter of which is particularly complex to handle.</p>
-<p>These point to the need for the complex workflows used in CRSNet and highlights the value of the CEO-LD project in helping to apply Web technologies to make it much easier for non-specialists to make use of satellite data.</p>
-<p>The discussion following Guoqing Li's presentation concluded by considering how available the Chinese data is or might be. In broad terms, the data is available in China and can be made available for research elsewhere, but as things stand, access to the data is not sufficiently liberal for operational uses.</p>
+<p>对于这些数据产品来说，仅支持地理空间和时间维度并不足够，还需要支持其他领域相关的覆盖数据类型，如波段（wavebands），，及其底层的语义。这是互联数据（Linked Data）相关工作擅长的，能够帮助更多数据集细节信息的不同领域专家参与进来。</p>
+<p>在创建某个预先确定的通用产品（pre-determined Common Products）时，可能需要3个层次的粒度（精度，如10m, 100m 及 1km）。如果应用需要30m的数据精度（granularity），就需要将数据归一化到10m。在时间维度上，数据集提供每天两次的更新，但基于数据构造的工具可能需要每8天更新以此，这样，数据代理（broker）需要处理这种可能的错误。同时，还需要注意到，尽管本项目关注卫星对地观测数据，CRSNet不仅使用基于卫星的观测数据，还使用了机载的遥感数据，而后者可能使数据的处理更加复杂。</p>
+<p>基于这些考虑，在CRSNet中使用了复杂的工作流机制，CEO－LD项目可以通过帮助Web应用更好的使用数据，来使非专家用户更容易理解和应用基于卫星及航空平台的遥感及对地观测数据。</p>
+<p>李国庆报告后的讨论，也涉及到这些中国对地观测项目数据（或世界上其他机构投资的类似项目数据）能否公开获得的讨论。CRSNet的数据可以提供给中国研究机构开展各类相关研究，但是否能够支持商业应用仍有待进一步讨论（is not sufficiently liberal for operational uses）。</p>
 </section>
 
 <section id="dataCloud"><h2>3. 地理数据云（Geospatial Data Cloud）</h2>
