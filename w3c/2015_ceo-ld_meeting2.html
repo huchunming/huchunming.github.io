@@ -3,7 +3,7 @@
 <head>
   <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
   <meta name="viewport" content="width=device-width" />
-  <title>Report on the second meeting of the CEO-LD Project</title>
+  <title>CEO-LD项目第二次会议报告</title>
   <link rel="stylesheet" href="/StyleSheets/TR/base.css" type="text/css" />
   <link rel="stylesheet" href="local.css" type="text/css" />
 </head>
@@ -11,7 +11,7 @@
 <header>
 <h1>CEO-LD项目第二次会议报告</h1>
 <img src="https://www.w3.org/2015/ceo-ld/sky.jpg" style="width:100%" alt="A starry night sky with a prominent streak showing the movement of a satellite" />
-<aside id="mainNav"><nav><a href="https://www.w3.org/2015/ceo-ld/">CEO-LD Home</a> <a href="https://www.w3.org/2015/ceo-ld/">wiki</a></nav> <span id="langChange"><a href="meeting2.html.zh-hans">中文</a></span></aside>
+<aside id="mainNav"><nav><a href="https://www.w3.org/2015/ceo-ld/">CEO-LD Home</a> <a href="https://www.w3.org/2015/ceo-ld/">wiki</a></nav> <span id="langChange"><a href="http://huchunming.github.io/w3c/2015_ceo-ld_meeting2.html">中文</a></span></aside>
 </header>
 
 <p>2016年2月28日</p>
@@ -70,11 +70,11 @@
 <p>北京航空航天大学的沃天宇博士介绍了他们与神州租车合作的'U-Car'智能专车应用服务。这一应用领域乍一看与地理覆盖数据关联不大，但该应用需要基于位置的大量数据提供一些重要服务（如用户等待时间、某一路径的油耗评价等）。目前这一服务平台每天获得 1.2亿消息（每辆联网汽车会以大约10s的间隔汇报位置及在线诊断数据/OBD），并且这一趋势仍在快速增长中。大量的数据处理任务无法完全由浏览器处理，因此在平台中需要通过后台服务器做数据预处理。但在浏览器中处理数据仍有重要应用场景，如当车辆驶入隧道等情况无法保持网络连接，则需要浏览器中的本地处理帮助持续记录和识别车辆事件。基于HTML5，可以使前端应用获得更好的网络在线－离线切换能力。非地理数据（如车辆驾驶的行为事件、天气对用车需求的影响等）可与给定的位置关联起来，帮助更好的预测需求并提供服务。</p>
 </section>
 <section id="melodies"><h2>5. MELODIES项目</h2>
-<p>Maik Riechert of the University of Reading gave a <a href="https://www.youtube.com/watch?v=dxfmTkBdn90">demonstration</a> of his work in the <a href="http://melodiesproject.eu/">MELODIES project</a> which has advanced significantly since the initial CEO-LD meeting. As noted by Tianyu Wo, there will always be some things that need to be done server side, but by moving some of the data to the browser, it's possible to make it more available for use in a diversity of Web applications that may be created by those with no specialist knowledge of geospatial and satellite data. To an outsider, the MELODIES demo looks like images but it's data that's sent to the browser and laid on top of a base image. A 3000 x 2000 pixel coverage is readily handled in the browser but care is needed. JSON can be compressed before being sent to the browser but when uncompressed can easily become too large to handle.</p>
+<p>英国里丁大学（University of Reading）的Maik Riechert 在会上给出了关于<a href="http://melodiesproject.eu/">MELODIES 项目</a>的 <a href="https://www.youtube.com/watch?v=dxfmTkBdn90"> 演示</a> ，自2015年9月在伦敦举行CEO-LD项目的第一次研讨会以来，该项目取得了巨大进展。如沃天宇所说，很多处理和计算仍需要在服务器端完成，但如果能够将某些数据移动到浏览器，我们就有可能通过多样的Web应用让这些数据更易于访问和理解，让更多并不具有地理和卫星数据专业知识的用户能够使用这些数据和应用。对于一个外部（非专业）用户，MELODIES的演示提供了一组能够从浏览器访问并操作的、基于地理信息数据可视化的图片，以及在图片上叠加的标注和绘制操作，其中，浏览器可以快速的操作一个 3000 x 2000 像素的地理覆盖数据集，但这一过程需要非常小心。基于 JSON 格式的覆盖数据在从服务器传递给浏览器之前经过了压缩，因为不压缩的数据可能让浏览器处理大数据集变得更加挑战。</p>
 
-<p>Having data available in the browser provides more flexibility than may be available in server side processing. As an example, the UK's Department of the Environment and Rural Affairs' remit doesn't extend to the sea so they only ever want to look at satellite data related to the land. Maik showed how he was able to strip out the sea areas of a land cover dataset and create and manipulate a smaller dataset, all in the browser using a regular Web developer's toolkit as, to emphasise the point, his application is handling data, not images.</p>
+<p>与在服务器端进行数据处理相比，在浏览器中操作数据能够提供更丰富的灵活性。例如，英国环境和乡村事务部（UK's Department of the Environment and Rural Affairs）只关心陆地区域而不关心海洋区域。Maik展示了如何操作一个覆盖了陆地区域和海洋区域的地理覆盖数据，将海洋数据从其中剔除出去，从而形成一个较小的数据集的过程。需要指出的是，这里的整个处理过程都是基于数据集，而不是处理图像。</p>
 
-<p>The Chinese colleagues could see the advantages and potential of the MELODIES approach and there followed a discussion about the maximum size of a dataset that is sensible to send to a browser. Not long ago, 40MB would be too much, now it is probably OK. Perhaps content negotiation can be used to return an amount of data within a defined maximum as either a set of pages connected by HTTP Link Headers, or perhaps a more complex option would be to return the data in different resolutions depending on the HTTP accept headers received. A further alternative might be to only send, say, 10MB tiles at a time and allow the browser to 'say when' it's had as much as it can cope with. Maik showed how his application only requests a certain amount of data at a time when a user clicks on a control for selecting a time step and, as the data packages are small, the latency is well within acceptable limits. Importantly, the data held is discarded from memory before the next set is loaded so that the application doesn't become more bloated as it is used. As for other web resources, the browser cache is used implicitly when loading data that had been loaded before but which had been discarded from memory in the meantime.</p>
+<p>与会中方专家高度评价了 MOELODIES 项目在本地处理数据的优势和潜力，并对浏览器能够处理的数据集大小上限进行了讨论。不久以前，40MB对于浏览器处理来讲是一个挑战，但现在这已经不是问题。讨论认为，在服务器和浏览器之间通过 HTTP link头进行内容协商（content negotiation），从而确定浏览器能够支持的最大数据量是一个可能的方法；同时，基于HTTP的头部携带信息，为不同浏览器提供不同解析度的数据则是另一个解决此类问题的替代性方法；另一个可能的方法是服务器先向浏览器传送一定数量的数据子集（如10MB），然后允许浏览器表达是否超出了其能够处理的范围。在Maik的演示中，Web应用先向服务器请求一部分数据，当用户点击用户界面或执行控制操作（如选择特定的时间步长），再根据数据量和用户能够容忍的延迟范围向服务器请求其他数据集。其中很重要的一件事情是，浏览器必须在加载新的数据集之前将内从的数据清空，从而避免使Web应用消耗太多的内存空间。浏览器缓存可以隐式地帮助Web应用缓存其他Web资源，从而避免重复加载一些相同的资源或数据，但手动清空内存可能让这一这些缓存数据也被清空。</p>
 </section>
 
 <section id="collaboration"><h2>6. 中英合作（UK-China Collaboration）</h2>
