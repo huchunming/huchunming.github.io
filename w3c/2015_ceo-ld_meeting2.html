@@ -78,25 +78,26 @@
 </section>
 
 <section id="collaboration"><h2>6. 中英合作（UK-China Collaboration）</h2>
-<p>The participants spent some time thinking about how to realise a solid collaboration. OGC's Denise McKenzie suggested that we focus on specific themes that are important in both countries, such as agriculture, disaster management, water, or fire management. It was also clear that those in the room were mostly concerned with data management, rather than being end users. Geoffrey Boulton remarked that in his work on ice caps, he has to handle images; he'd much rather have Maik working with him to turn it into data that he can manipulate.</p>
-<p>Jianhui Li pointed out that CNIC provides services to scientists, i.e. specialists in specific fields, not generalist Web application developers. Guoqing Li suggested working on a new Common Product, perhaps a national vegetation index, but that the idea of exposing data that can be used in a Web application, rather than providing a complete service based on back end processing, would mean a new workflow. There was much discussion about where the participants could see the approach being useful in a future project, tied to an ongoing programme and how the collaboration would work in practice.</p>
-<p>The discussion for the remainder of the day continued to be wide ranging with many 'future possibilities' but everyone was cognisant of the limited time available in the current project and keen to deliver a practical outcome that can be the basis of future work. After a good deal of discussion, it was agreed that:</p><dl>
-<dt>RADI<dt><dd> will develop two new Common Products, a Normalised Difference Vegetation Index and a Leaf Area Index that would be made available via a RESTful API with a WGS84 coordinate reference system. The Common products would be available as HDF5 and GeoTIFF.</dd>
+<p>参与方重点讨论了如何开展后续合作。OGC的 Denise McKenzie 建议双方关注在中英两国都重点关心的应用场景——如农业、灾害管理、水污染、森林消防等特定应用场景。参与讨论的专家们关心数据如何管理，但需要从终端用户的角度思考问题。Geoffrey Boulton指出在他参与的关于冰盖（ice caps）相关的研究中，他不得不直接对卫星数据进行操作；他希望和Maik一起合作，为研究者提供可以操作的数据及操作方法。</p>
+<p>黎建辉研究员指出 CNIC 致力于为科学家提供服务，这些科学家往往对领域知识有充分理解，但并不是熟练的Web应用开发者。李国庆建议选择一些新的“公共数据服务”作为技术验证，如国家植被指数（national vegetation index），这些公共数据服务旨在为 Web应用提供可操作的数据，而不是提供一个包含了后台数据处理的完整数据服务，这可能引入一个新的处理流程。与会专家还讨论了这些地理覆盖数据共享技术对未来项目合作的支撑，讨论和后续的项目合作及协作方式。</p>
+<p>讨论识别了一系列未来合作可能，在本项目中，各个参与方都承诺提供有限的时间投入，确保该项目的产出能够成为后续合作的基础。经过认真讨论，形成以下一致意见：</p><dl>
 
-<dt>CNIC</dt><dd>will write a library that converts HDF5 and GeoTIFF to the <a href="https://github.com/Reading-eScience-Centre/coveragejson/blob/master/spec.md">CoverageJSON</a> format under development at the University of Reading and expose that data through an API. The data will be 'just too big' for a browser to handle in full and therefore will need to offer a mechanism for delivery of subsets of the data. The service will be hosted on CNIC's Geospatial Data Cloud infrastructure.</dd>
+<dt>中科院遥感所（RADI）<dt><dd> 将开发两个新的通用产品（Common Products），归一化植被指数（Normalised Difference Vegetation Index）及 叶面积指数（Leaf Area Index），这两个服务提供RESTful API，并支持WGS84坐标参考系统（WGS84 coordinate reference system）。这两个通用产品支持HDF5及GeoTIFF数据格式。</dd>
 
-<dt>University of Reading</dt><dd>will support CNIC in the development of their service, amending and updating the CoverageJSON spec in the light of the experiences gained. Reading will also develop a client application to support grid comparison.</dd>
-<dt>Beihang University</dt><dd>will investigate an independent application that makes use of the RADI and CNIC APIs.</dd>
+<dt>中科院计算机网络信息中心（CNIC）</dt><dd>将编写一个库，支持HDF5格式及 GeoTIFF格式到<a href="https://github.com/Reading-eScience-Centre/coveragejson/blob/master/spec.md">CoverageJSON</a>格式的转换。CoverageJSON是英国里丁大学开发的一组数据访问API。由于所处理的数据往往超出浏览器所能处理的数据集大小上限，因此这个函数库需要提供一种机制，支持对数据子集（subset of data）的分发。这一数据服务将基于 CNIC 的地理空间数据云基础设施对外提供。</dd>
+
+<dt>英国里丁大学（University of Reading）</dt><dd>将支持 CNIC开发其服务，根据实现中的反馈修订和维护 CoverageJSON 标准。里丁大学同时也需要开发一个客户端应用，支持网格比较（grid comparison）。</dd>
+<dt>北京航空航天大学</dt><dd>将尝试基于 RADI 和 CNIC的API，结合其他数据源提供独立应用案例。</dd>
 </dl>
-<p>The outcome of the work will be demonstrated during the <strong>OGC</strong>'s Technical Committee meeting in Dublin on 22 June at 09:00 local time, 15:00 Beijing. OGC will manage the invitation and registration process for that occasion.</p>
-<p><strong>W3C</strong> will report on the project and continue to ensure good communication between the CEO-LD project and the OGC/W3C Spatial Data on the Web Working Group. It is notable in that regard that since the Beijing meeting, Bill Roberts of SWIRRL has convened a separate meeting series of SDW WG members interested in the coverages work (he, Maik Riechert and Jitao Yang of RADI are the editors of the Coverages in Linked Data specification).  In parallel with the CEO-LD project, a team at the Australian National University in Canberra will also experiment with CoverageJSON and look at alternatives, thus providing an independent view.</p>
-<p>In this way, the SDW WG will have empirical evidence on which to base the development of the standard that goes substantially beyond what is normally available. This is important since it is clear that the concepts of turning satellite images into data that can be manipulated by Web developers with little or no knowledge of Earth Observation technologies and methods are new. The collaboration with colleague in the UK and China ensures that the methods are cross border and cross cultural with active discussions about future collaborations of mutual interest and benefit.</p>
+<p>这些工作的产出将于 2016年6月22日在上午9:00（都柏林时间）、北京时间下午15:00在爱尔兰都柏林举行的 <strong>开放地理联盟（OGC）</strong>技术委员会会议上进行演示。OGC将配合处理邀请及注册事宜。</p>
+<p><strong>W3C</strong> 将报告项目的进展，并持续确保 CEO-LD项目与 OGC/W3C Web空间数据工作组（OGC/W3C Spatial Data on the Web Working Group）的联系。与北京研讨会同时，SWIRRL的Bill Roberts 也组织SDW工作组中对覆盖数据感兴趣的专家举行了另一个系列讨论（Bill Roberts和 Maik Riechert 、RADI的Jitao Yang是 互联数据中的地理覆盖（Coverages in Linked Data）规范的编辑）。与 CEO-LD项目同步，澳大利亚国立大学 Canberra分校（Australian National University in Canberra）的研究团队也开展了 CoverageJSON的试验，并寻找其他的替代方案，提供关于地理覆盖数据的另一个独立视角。</p>
+<p>SDW工作组具有开发国际标准的经验，能够确保研发的技术标准具有可持续发展能力。这对于研发将卫星图片转换为 Web开发者可以使用的技术标准来说至关重要，特别是广大的Web开发者并不具有（或只有非常有限的）关于对地观测技术的领域知识。W3C与来自英国及中国研究机构的合作，可以确保研发的技术标准通过充分的沟通讨论跨越地理界限、跨越文化，并为未来合作打下基础。</p>
 </section>
 </main>
 
 <footer>
 <p>标题背景图片来源于 <a href="https://flic.kr/p/iVvY69">Cradle of Stars</a> ，作者： <a href="https://www.flickr.com/photos/scott-s_photos/">Scott Cresswell</a>.</p>
-<p>Last updated: $Id: meeting2.html.en,v 1.4 2016/03/11 09:31:31 phila，W3C/Beihang 翻译 Exp $</p>
+<p>最后更新: $Id: meeting2.html.en,v 1.4 2016/03/11 09:31:31 phila，W3C/Beihang 翻译 v1.4 2016/04/05  Exp $</p>
 
 </footer>
 
