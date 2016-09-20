@@ -192,7 +192,7 @@
         <h2 id="cohesion">4.有粘性的Web平台</h2>
         <p>在继续开发 HTML之外，W3C还在关注其他能够扩展Web平台的方向：Web支付，物联万维网（Web of Things）, Web实时通讯（WebRTC）以及Web安全。所有这些新方向都有助于加强Web平台的粘性，。最近，W3C开始探索区块链（Blockchain）技术与Web的结合点。W3C在2016年6月29-30日举办了关于 (<a href="https://www.w3.org/2016/04/blockchain-workshop/">区块链与Web——W3C分布式账本技术研讨会（Blockchains
             and the Web, a W3C Workshop on Distributed Ledgers on the Web）</a>，详情请见该研讨会的 <a href="https://www.w3.org/2016/04/blockchain-workshop/report.html">总结报告</a>，识别了一系列可能的标准化研究方向，包括但不局限于多种身份识别与存在性证明方法（proof-of-existence），可增强分布式账本间互操作性的小型区块链原语（primitives）等。</p>
-        <p>在今年3月举行的W3C顾问委员会（AC Meeting）上，开启了关于什么是<a href="https://www.w3.org/2016/Talks/ac2016-Jeff/public.html">未来Web的重要方向（next big thing for the Web）</a> 的讨论 A straw poll yielded:与投票，得票较多的一些共识方向如下：</p>
+        <p>在今年3月举行的W3C顾问委员会（AC Meeting）上，开启了关于什么是<a href="https://www.w3.org/2016/Talks/ac2016-Jeff/public.html">未来Web的重要方向（next big thing for the Web）</a> 的讨论与投票，得票较多的一些共识方向如下：</p>
         <ol>
           <li> 安全</li>
           <li> Web支付</li>
@@ -202,84 +202,60 @@
           <li> 行业支持（Industry support）</li>
           <li> 虚拟现实（Virtual Reality）</li>
         </ol>
-        <h3 id="security">Security</h3>
+        <h3 id="security">4.1 安全</h3>
         <ul>
-          <li> <a href="https://www.w3.org/webauthn/">Web Authentication
-              Working Group</a> launched and published the <strong>FPWD of its
-              <a href="https://www.w3.org/TR/webauthn/">WebAuthn API</a></strong>,
-            bringing strong cryptographic authentication to the Web platform (to
-            reduce the reliance on password-based authentication). </li>
-          <li> <a href="http://www.w3.org/2011/webappsec/">WebAppSec WG</a>
-            published a <strong>Recommendation of <a href="https://www.w3.org/TR/SRI/">Subresource
-                Integrity</a></strong>, and Candidate Recommendations of <a href="http://www.w3.org/TR/2015/CR-CSP2-20150721/">CSP
-              Level 2</a>, <a href="http://www.w3.org/TR/2015/CR-upgrade-insecure-requests-20151008/">Upgrade
-              Insecure Requests</a> and <a href="http://www.w3.org/TR/2015/CR-mixed-content-20151008/">Mixed
-              Content</a>. </li>
-	  <li>Read more <a href="privacy-security">below</a>.</li>
+          <li> W3C正式成立了<a href="https://www.w3.org/webauthn/">Web认证工作组（Web Authentication
+              Working Group）</a> ，并发布了 <strong>
+              <a href="https://www.w3.org/TR/webauthn/">Web认证API（WebAuthn API）</a>的首份公开工作草案（FPWD）</strong>,
+            为Web平台提供强密码认证支持，从而提供比用户名－口令认证方式更有效的认证机制并降低被攻击的风险。</li>
+          <li>此外，W3C的 <a href="http://www.w3.org/2011/webappsec/">Web应用安全工作组（WebAppSec WG）</a>
+            发布了 <strong> <a href="https://www.w3.org/TR/SRI/">子资源完整性（Subresource
+                Integrity）</a>的推荐标准（REC）</strong>，以及 <a href="http://www.w3.org/TR/2015/CR-CSP2-20150721/">内容安全策略（CSP
+              Level 2）</a>、<a href="http://www.w3.org/TR/2015/CR-upgrade-insecure-requests-20151008/">升级非安全请求（Upgrade
+              Insecure Requests）</a> 以及 <a href="http://www.w3.org/TR/2015/CR-mixed-content-20151008/">混合内容（Mixed
+              Content）</a>的候选推荐标准（CR）。 </li>
+	  <li>更多内容，请参阅本文 <a href="privacy-security">6.隐私与安全</a>一章。</li>
         </ul>
-        <h3 id="webpayments">Web Payments</h3>
+        <h3 i
+d="webpayments">4.2 Web支付</h3>
         <ul>
-          <li> The <a href="https://www.w3.org/Payments/WG/">Web Payments
-              Working Group</a> is making payments easier and more secure on the
-            Web by maturing three <abbr title="First Public Working Draft">FPWD</abbr>s:
+          <li> W3C的 <a href="https://www.w3.org/Payments/WG/">Web支付工作组（Web Payments
+              Working Group）</a> 在2016年4月已经<a href="http://www.chinaw3c.org/archives/1322/">发布了三份<abbr title="First Public Working Draft">标准工作草案</abbr></a>，帮助Web上的支付更加安全易用：
             <ul>
-              <li> <a href="http://www.w3.org/TR/payment-request/">Payment
-                  Request API</a>: Web API to allow merchants to easily accept
-                payments from different payment methods with minimal
-                integration. User agents will facilitate the payment flow
-                between merchant and user. </li>
-              <li> <a href="http://www.w3.org/TR/payment-method-id/">Payment
-                  Method Identifiers</a>: Payment method identifier strings so
-                that components in the payment ecosystem can determine which
-                parties support which payment methods. </li>
-              <li> <a href="http://www.w3.org/TR/payment-method-basic-card/">Basic
-                  Card Payment</a>: Data formats used by the Payment Request API
-                to support payment by payment cards such as credit or debit
-                cards. </li>
+              <li> <a href="http://www.w3.org/TR/payment-request/">支付请求API（Payment
+                  Request API）</a>: 定义了一组Web API，允许商家（如完成商品或服务销售的Web站点）更容易的通过不同支付方式接受付款。</li>
+              <li> <a href="http://www.w3.org/TR/payment-method-id/">支付方法标识符（Payment
+                  Method Identifiers）</a>: 为每种已知的支付方法定义了字符串形式的“支付方法标识符”，在支付生态系统中的不同组件可以通过这个表示符确认支付的对端所支持的支付方法。 </li>
+              <li> <a href="http://www.w3.org/TR/payment-method-basic-card/">基本卡支付（Basic
+                  Card Payment）</a>: 描述了支付请求 API在支持信用卡或储蓄卡等卡基支付方式时，所需描述的数据格式。
+</li>
             </ul>
           </li>
-          <li> The <a href="https://www.w3.org/Payments/IG/">Web Payments
-              Interest Group</a> continues to look for standardization
-            opportunities for W3C and to hold discussions with other
-            organizations.
+          <li> W3C的 <a href="https://www.w3.org/Payments/IG/">Web支付兴趣组（Web Payments Interest Group）</a> 继续与其他支付相关的标准化组织合作，持续寻找支付领域的新的标准化工作机会。
             <ul>
-              <li> On its agenda are topics such as: verifiable claims,
-                blockchain (next steps following the Workshop), coupons and
-                loyalty, interledger protocol, and its own mission and
-                operations. </li>
+              <li> 目前识别的工作方向包括：可验证声明（verifiable claims）、区块链、折扣计划（coupons and loyalty）跨账本协议（interledger protocol）等。</li>
             </ul>
           </li>
-	  <li>Read more <a href="webpayments2">below</a>.</li>
+	  <li>更多内容，请参阅本文 <a href="webpayments2">5.4 Web支付</a>一节。</li>
         </ul>
-        <h3 id="wot">Web of Things</h3>
+        <h3 id="wot">4.3 物联万维网（Web of Things）</h3>
         <ul>
-          <li> Progressing towards overcoming the fragmentation of the Internet
-            of Things; enabling end to end interoperability across different
-            platforms. </li>
-          <li> The <a href="http://www.w3.org/WoT/IG/">Web of Things Interest
-              Group</a> is chartering a Working Group. </li>
-          <li> Liaisons with the Open Connectivity Foundation, the Industrial
-            Internet Consortium, Industry 4.0, OPC Foundation, ETSI and oneM2M,
-            IETF and IRTF, GSMA, Hypercat, the Open Group, and a number of
-            others. </li>
-	  <li>Read more <a href="wot2">below</a>.</li>
+          <li> 为了克服物联网平台与技术碎片化，支持跨IoT平台的端到端互操作性，W3C积极推进了物联万维网的标准化工作：</li>
+          <li> W3C的 <a href="http://www.w3.org/WoT/IG/">物联万维网兴趣组（Web of Things Interest Group）</a> 正在推动工作组设立，讨论工作组章程。</li>
+          <li> W3C 建立了与 开放互联基金会（Open Connectivity Foundation）、工业互联网联盟（Industrial Internet Consortium）、工业 4.0、OPC基金会、ETSI 及 oneM2M、IETF、IRTF、GSMA、Hypercat、Open Group 等国际、区域和行业标准化组织的联系。</li>
+	  <li>更多内容，请参阅本文 <a href="wot2">7.物联万维网</a> 一章。</li>
         </ul>
-        <h3 id="webrtc">WebRTC</h3>
+        <h3 id="webrtc">4.4 Web实时通讯（WebRTC）</h3>
         <ul>
-          <li> WebRTC milestone: publication last May as Candidate
-            Recommendation of <a href="https://www.w3.org/TR/mediacapture-streams/">getUserMedia</a>, one of the two main APIs behind the
-            WebRTC technology. </li>
-          <li> Once WebRTC 1.0 reaches Candidate Recommendation, work will start
-            in earnest on the next version of WebRTC, which aims at converging
-            in more depth with the work started in the ORTC Community Group. </li>
-	  <li>Read more <a href="telecommunications">below</a>.</li>
+          <li> WebRTC 标准化取得突破性进展，W3C在2016年5月发布了 <a href="https://www.w3.org/TR/mediacapture-streams/">getUserMedia</a>的候选推荐标准，这是WebRTC两个核心 API之一。</li>
+          <li> 随着 WebRTC 1.0 接近候选推荐标准阶段，关于下一版本的 WebRTC 的标准化工作讨论已经启动，目前，更多的意向集中在如何基于 对象RTC社区组（ORTC Community Group）开展工作。 </li>
+	  <li>更多内容，请参阅本文 <a href="telecommunications">5.3 电信</a> 一节。</li>
         </ul>
-        <h3 id="vr">Virtual Reality</h3>
+        <h3 id="vr">4.5 虚拟现实（Virtual Reality）</h3>
         <ul>
-          <li>The <a href="https://www.w3.org/2016/06/vr-workshop/">upcoming
-              workshop on Web &amp; Virtual Reality</a> will provide an early
-            perspective on how the two fields can benefit from one another. </li>
-          <li>Read more <a href="#vr2">below</a>.</li>
+          <li>W3C 即将于2016年10月举行 <a href="https://www.w3.org/2016/06/vr-workshop/">Web与虚拟现实技术研讨会</a>，研讨Web与虚拟现实这两个技术领域的相互融合
+可能为各自发展带来什么新的机会和增长点。 </li>
+          <li>更多内容，请参阅本文 <a href="#vr2"> 5.5.1 虚拟现实</a> 一节。</li>
         </ul>
         <h2 id="indepth">In depth</h2>
         <h3 id="digpub2">Digital Publishing</h3>
